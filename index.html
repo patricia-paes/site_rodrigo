@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rodrigo Victor — Personal Trainer na Zona Sul do Rio de Janeiro</title>
+<meta name="description" content="Personal trainer na Zona Sul do Rio de Janeiro. Treinamento individualizado com base em análise do movimento, para todas as idades e níveis. CREF 041487-G/RJ.">
+<link rel="canonical" href="https://rodrigovictor.com.br/">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Rodrigo Victor — Personal Trainer">
+<meta property="og:title" content="Rodrigo Victor — Personal Trainer na Zona Sul do Rio">
+<meta property="og:description" content="Treinamento individualizado com base em análise do movimento. Presencial na Zona Sul do Rio e online. CREF 041487-G/RJ.">
+<meta property="og:url" content="https://rodrigovictor.com.br/">
+<meta property="og:image" content="https://rodrigovictor.com.br/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0B1214">
+
+<link rel="icon" href="assets/img/favicon.ico" sizes="any">
+<link rel="icon" href="assets/img/favicon-32.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+
+<link rel="preload" as="image" href="assets/img/hero-1920.webp" media="(min-width:721px)">
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/jost-latin-300-normal.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/cormorant-garamond-latin-300-normal.woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+<header class="topo" id="topo">
+  <div class="topo__wrap">
+    <a class="topo__logo" href="#topo" aria-label="Rodrigo Victor, personal trainer — início">
+      <img src="assets/img/logo-lockup.png" alt="" width="560" height="376" fetchpriority="high">
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Navegação principal">
+      <ul>
+        <li><a href="#metodo">Método 4P</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#treinos">Treinos</a></li>
+        <li><a href="#comecar">Como começar</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+
+    <a class="btn btn--gold topo__cta" href="#contato">Agendar avaliação</a>
+
+    <button class="menu" id="menu" aria-expanded="false" aria-controls="nav" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" aria-labelledby="hero-t">
+    <picture class="hero__img">
+      <source media="(max-width:720px)" type="image/webp"
+              srcset="assets/img/hero-mobile-640.webp 640w, assets/img/hero-mobile-900.webp 900w">
+      <source media="(max-width:720px)"
+              srcset="assets/img/hero-mobile-640.jpg 640w, assets/img/hero-mobile-900.jpg 900w">
+      <source type="image/webp"
+              srcset="assets/img/hero-1280.webp 1280w, assets/img/hero-1920.webp 1920w, assets/img/hero-2560.webp 2560w">
+      <img src="assets/img/hero-1920.jpg"
+           srcset="assets/img/hero-1280.jpg 1280w, assets/img/hero-1920.jpg 1920w, assets/img/hero-2560.jpg 2560w"
+           sizes="100vw" alt="Rodrigo Victor correndo no Aterro do Flamengo, com a orla e as montanhas do Rio de Janeiro ao fundo"
+           fetchpriority="high" decoding="async" width="1860" height="846">
+    </picture>
+
+    <div class="hero__box wrap">
+      <h1 class="hero__t" id="hero-t">
+        <span>Equilíbrio.</span>
+        <span>Performance.</span>
+        <span class="is-gold">Qualidade de vida.</span>
+      </h1>
+      <p class="hero__sub">Treinamento personalizado para quem entende que saúde é o maior patrimônio.
+        Atendimento presencial na Zona Sul do Rio de Janeiro e acompanhamento online.</p>
+      <div class="hero__acoes">
+        <a class="btn btn--gold" href="#contato">Agendar avaliação</a>
+        <a class="btn btn--ghost" href="#metodo">Conhecer o método</a>
+      </div>
+      <p class="hero__cref">Rodrigo Victor · CREF 041487-G/RJ</p>
+    </div>
+
+    <a class="hero__scroll" href="#metodo" aria-label="Avançar para o método">
+      <svg viewBox="0 0 24 14" aria-hidden="true"><path d="M1 1l11 11L23 1" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+    </a>
+  </section>
+
+  <!-- ================= MÉTODO 4P ================= -->
+  <section class="sec sec--dark metodo" id="metodo" aria-labelledby="metodo-t">
+    <div class="wrap metodo__grid">
+      <div class="metodo__intro">
+        <p class="eyebrow">Método 4P</p>
+        <h2 class="t2" id="metodo-t">Um método.<br>Quatro pilares.<br>Resultados para a vida.</h2>
+        <p class="lead">O Método 4P foi criado para quem busca muito mais do que treinar.
+          É sobre transformar corpo, mente e rotina de forma inteligente e sustentável.</p>
+      </div>
+
+      <ol class="pilares">
+        <li class="pilar">
+          <svg class="ico" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="13" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="20" cy="20" r="6" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M20 20 32 8M27 8h5v5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+          <h3>Propósito</h3>
+          <p>Toda transformação começa por um motivo. Treinamos com um objetivo claro e real.</p>
+        </li>
+        <li class="pilar">
+          <svg class="ico" viewBox="0 0 40 40" aria-hidden="true"><path d="M6 28l8-8 6 5 12-13" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M25 12h7v7" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+          <h3>Performance</h3>
+          <p>Mais força, mais mobilidade, mais disposição. Melhorar continuamente para viver melhor.</p>
+        </li>
+        <li class="pilar">
+          <svg class="ico" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 6l12 5v9c0 8-5 12-12 14-7-2-12-6-12-14v-9z" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M15 20l4 4 7-8" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+          <h3>Proteção</h3>
+          <p>Prevenir é evoluir. Cuidamos do seu corpo para hoje, amanhã e por toda a vida.</p>
+        </li>
+        <li class="pilar">
+          <svg class="ico" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 20c3.1-4.8 5.6-7.5 9.8-7.5a7.5 7.5 0 010 15c-4.2 0-6.7-2.7-9.8-7.5zm0 0c-3.1 4.8-5.6 7.5-9.8 7.5a7.5 7.5 0 010-15c4.2 0 6.7 2.7 9.8 7.5z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+          <h3>Permanência</h3>
+          <p>Resultados que permanecem. Sem extremos, com consistência e hábitos reais.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ================= SOBRE ================= -->
+  <section class="sec sec--deep sobre" id="sobre" aria-labelledby="sobre-t">
+    <div class="wrap sobre__grid">
+      <div class="sobre__foto">
+        <picture>
+          <source type="image/webp" srcset="assets/img/sobre-640.webp 640w, assets/img/sobre-960.webp 960w, assets/img/sobre-1280.webp 1280w" sizes="(max-width:900px) 92vw, 44vw">
+          <img src="assets/img/sobre-960.jpg" srcset="assets/img/sobre-640.jpg 640w, assets/img/sobre-960.jpg 960w, assets/img/sobre-1280.jpg 1280w" sizes="(max-width:900px) 92vw, 44vw"
+               loading="lazy" decoding="async" width="1024" height="1280"
+               alt="Rodrigo Victor executando um agachamento frontal com barra durante treino na Real Cross">
+        </picture>
+      </div>
+
+      <div class="sobre__txt">
+        <p class="eyebrow">Quem treina você</p>
+        <h2 class="t2" id="sobre-t">Movimento bem feito<br>é o que sustenta<br>o resultado.</h2>
+
+        <p>Sou profissional de Educação Física formado em 2014, com especialização em Cinesiologia,
+          Biomecânica e Treinamento Físico e certificação CrossFit Level 2. Atendo como personal trainer
+          na Zona Sul do Rio de Janeiro, com alunos de todas as idades e níveis de condicionamento.</p>
+
+        <p>Minha base técnica está na análise do movimento e na prescrição individualizada. Na prática,
+          isso aparece nas progressões: cada avanço é construído a partir de um fundamento que já está
+          sólido — como no trabalho de salto, que evolui sem apoio antes de receber carga.</p>
+
+        <dl class="cred">
+          <div><dt>Registro profissional</dt><dd>CREF 041487-G/RJ</dd></div>
+          <div><dt>Formação</dt><dd>Educação Física, 2014</dd></div>
+          <div><dt>Especialização</dt><dd>Cinesiologia, Biomecânica e Treinamento Físico, 2015</dd></div>
+          <div><dt>Certificação</dt><dd>CrossFit Level 2</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= REAL CROSS + INCLUSÃO ================= -->
+  <section class="sec sec--dark box" aria-labelledby="box-t">
+    <div class="wrap box__grid">
+      <div class="box__txt">
+        <p class="eyebrow">Real Cross · Botafogo</p>
+        <h2 class="t2" id="box-t">Um espaço construído<br>para caber em qualquer<br>nível físico.</h2>
+        <p>Em 2017 fundei a Real Cross, box em Botafogo que trabalha com condicionamento, força e treino
+          híbrido sob uma proposta simples: adaptar o CrossFit a qualquer nível físico, e não o contrário.</p>
+        <p>Essa mesma lógica orienta o atendimento individual. Já acompanhei alunos com TEA em treinos
+          adaptados realizados no próprio espaço da Real Cross, e participei do Seminário Rio TEAMA 2019,
+          na Cidade das Artes — um dos principais eventos sobre autismo do Rio.</p>
+      </div>
+      <div class="box__foto">
+        <picture>
+          <source type="image/webp" srcset="assets/img/realcross-640.webp 640w, assets/img/realcross-960.webp 960w" sizes="(max-width:900px) 92vw, 42vw">
+          <img src="assets/img/realcross-960.jpg" srcset="assets/img/realcross-640.jpg 640w, assets/img/realcross-960.jpg 960w" sizes="(max-width:900px) 92vw, 42vw"
+               loading="lazy" decoding="async" width="854" height="1280"
+               alt="Rodrigo Victor durante um treino na Real Cross, em Botafogo">
+        </picture>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TREINOS ================= -->
+  <section class="sec sec--light treinos" id="treinos" aria-labelledby="treinos-t">
+    <div class="wrap">
+      <div class="treinos__topo">
+        <div>
+          <p class="eyebrow">Treinos</p>
+          <h2 class="t2" id="treinos-t">Treino onde você estiver.<br>Resultados onde você for.</h2>
+        </div>
+        <p class="lead">Modalidades personalizadas para se encaixar na sua rotina e no seu estilo de vida.
+          Todas seguem a mesma avaliação e o mesmo acompanhamento.</p>
+      </div>
+
+      <ul class="mods">
+        <li class="mod">
+          <svg class="ico" viewBox="0 0 40 40" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M15 20h10M5.5 16v8M34.5 16v8"/><rect x="10" y="11.5" width="5" height="17" rx="1.2"/><rect x="25" y="11.5" width="5" height="17" rx="1.2"/></g></svg>
+          <h3>Presencial</h3>
+          <p>Estrutura completa para treinos focados e eficientes, na Real Cross ou na sua academia.</p>
+        </li>
+        <li class="mod">
+          <svg class="ico" viewBox="0 0 40 40" aria-hidden="true"><path d="M9 34V9h13v25M22 34V17h9v17M13 15h5M13 21h5M13 27h5M26 22h2M26 28h2" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+          <h3>Condomínio</h3>
+          <p>Treino exclusivo na academia do seu prédio, aproveitando a estrutura que você já tem.</p>
+        </li>
+        <li class="mod">
+          <svg class="ico" viewBox="0 0 40 40" aria-hidden="true"><path d="M6 19L20 8l14 11M10 17v15h20V17M17 32v-8h6v8" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+          <h3>Residência</h3>
+          <p>Conforto e privacidade para treinar no lugar que você escolher, com pouco ou nenhum equipamento.</p>
+        </li>
+        <li class="mod">
+          <svg class="ico" viewBox="0 0 40 40" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="20" cy="13" r="5"/><path d="M20 4v2.4M28.4 13H31M9 13h2.6M26.6 6.4l1.7-1.7M11.7 21.3l1.7-1.7M26.6 19.6l1.7 1.7M11.7 4.7l1.7 1.7"/><path d="M3.5 33l8.5-9.5 5.5 6 6-7.5L36.5 33" stroke-linejoin="round"/></g></svg>
+          <h3>Ar livre</h3>
+          <p>Aterro, Lagoa, praia ou praça: a energia da cidade a favor do seu treino.</p>
+        </li>
+        <li class="mod">
+          <svg class="ico" viewBox="0 0 40 40" aria-hidden="true"><path d="M5 15a21 21 0 0130 0M11 21a13 13 0 0118 0M17 27a5 5 0 016 0" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><circle cx="20" cy="32" r="1.8" fill="currentColor"/></svg>
+          <h3>Online</h3>
+          <p>Programa e acompanhamento à distância, para quem viaja ou treina fora do Rio.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ================= COMO COMEÇAR ================= -->
+  <section class="sec sec--deep passos" id="comecar" aria-labelledby="passos-t">
+    <div class="wrap">
+      <p class="eyebrow">Como começar</p>
+      <h2 class="t2 passos__t" id="passos-t">Do primeiro contato<br>ao primeiro treino.</h2>
+
+      <ol class="passos__lista">
+        <li>
+          <span class="passos__n">1</span>
+          <h3>Conversa inicial</h3>
+          <p>Você me conta seu objetivo, sua rotina e seu histórico. Sem compromisso, pelo WhatsApp.</p>
+        </li>
+        <li>
+          <span class="passos__n">2</span>
+          <h3>Avaliação e anamnese</h3>
+          <p>Avaliação presencial com análise de movimento, histórico de saúde e definição de metas.</p>
+        </li>
+        <li>
+          <span class="passos__n">3</span>
+          <h3>Programa individualizado</h3>
+          <p>Montagem do plano, definição da modalidade, da frequência semanal e dos horários.</p>
+        </li>
+        <li>
+          <span class="passos__n">4</span>
+          <h3>Treino e reavaliação</h3>
+          <p>Acompanhamento contínuo, com ajustes de carga e progressão a cada ciclo.</p>
+        </li>
+      </ol>
+
+      <p class="passos__nota">Os planos variam conforme a modalidade e a frequência semanal.
+        Os valores são apresentados na conversa inicial, antes de qualquer compromisso.</p>
+    </div>
+  </section>
+
+  <!-- ================= FAIXA ================= -->
+  <section class="faixa" aria-labelledby="faixa-t">
+    <div class="wrap faixa__wrap">
+      <p class="faixa__q" id="faixa-t">Treinar não é o objetivo.<br>É o meio.</p>
+      <p class="faixa__a">Rodrigo Victor</p>
+    </div>
+  </section>
+
+  <!-- ================= DEPOIMENTOS ================= -->
+  <!-- TODO: substituir pelos depoimentos reais, com autorização por escrito de cada aluno.
+       Ver README.md, seção "Depoimentos". -->
+  <section class="sec sec--dark depo" id="depoimentos" aria-labelledby="depo-t">
+    <div class="wrap">
+      <div class="depo__topo">
+        <div>
+          <p class="eyebrow">Depoimentos</p>
+          <h2 class="t2" id="depo-t">Histórias reais.</h2>
+        </div>
+      </div>
+
+      <ul class="depo__lista">
+        <li class="card-depo is-vazio">
+          <p>Espaço reservado para depoimento de aluno.</p>
+          <p class="card-depo__meta">Aguardando texto e autorização</p>
+        </li>
+        <li class="card-depo is-vazio">
+          <p>Espaço reservado para depoimento de aluno.</p>
+          <p class="card-depo__meta">Aguardando texto e autorização</p>
+        </li>
+        <li class="card-depo is-vazio">
+          <p>Espaço reservado para depoimento de aluno.</p>
+          <p class="card-depo__meta">Aguardando texto e autorização</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ================= CTA FINAL ================= -->
+  <section class="cta" id="contato" aria-labelledby="cta-t">
+    <div class="wrap cta__grid">
+      <div>
+        <h2 class="t2 cta__t" id="cta-t">Sua melhor versão<br>começa com uma decisão.</h2>
+        <p>Agende uma avaliação e descubra como o Método 4P pode se encaixar na sua rotina.</p>
+
+        <ul class="contato">
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a12 12 0 006 6L16 13l5 2v4a2 2 0 01-2 2A16 16 0 013 5a2 2 0 012-2z" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+            <a href="https://wa.me/5521996160489?text=Ol%C3%A1%2C%20Rodrigo!%20Vim%20pelo%20site%20e%20quero%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">(21) 99616-0489</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M3 7l9 6 9-6" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+            <a href="mailto:contato@rodrigovictor.com.br">contato@rodrigovictor.com.br</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.3 7-11a7 7 0 10-14 0c0 4.7 7 11 7 11z" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="12" cy="10" r="2.6" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+            <span>Zona Sul do Rio de Janeiro — RJ</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></svg>
+            <a href="https://www.instagram.com/coachrodrigovictor/" target="_blank" rel="noopener">@coachrodrigovictor</a>
+          </li>
+        </ul>
+
+        <div class="bairros">
+          <h3>Onde atendo</h3>
+          <p>Atendimento presencial em Botafogo, Flamengo, Laranjeiras, Humaitá, Urca, Catete, Copacabana,
+            Leme, Ipanema, Leblon, Jardim Botânico, Gávea e Lagoa. Para quem mora fora da Zona Sul ou viaja
+            com frequência, o acompanhamento online cobre o restante.</p>
+        </div>
+      </div>
+
+      <form class="form" id="form" novalidate>
+        <p class="form__t">Solicitar avaliação</p>
+
+        <label for="f-nome">Nome</label>
+        <input id="f-nome" name="nome" type="text" autocomplete="name" required>
+
+        <label for="f-tel">WhatsApp</label>
+        <input id="f-tel" name="telefone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(21) 90000-0000" required>
+
+        <label for="f-mod">Modalidade de interesse</label>
+        <select id="f-mod" name="modalidade">
+          <option>Presencial</option>
+          <option>Condomínio</option>
+          <option>Residência</option>
+          <option>Ar livre</option>
+          <option>Online</option>
+          <option>Ainda não sei</option>
+        </select>
+
+        <label for="f-msg">Objetivo <span class="opc">(opcional)</span></label>
+        <textarea id="f-msg" name="mensagem" rows="3"></textarea>
+
+        <label class="check">
+          <input type="checkbox" id="f-lgpd" name="consentimento" required>
+          <span>Autorizo o contato pelos dados informados. Meus dados não serão compartilhados com
+            terceiros. <a href="privacidade.html">Política de Privacidade</a>.</span>
+        </label>
+
+        <button class="btn btn--gold form__btn" type="submit">Enviar pelo WhatsApp</button>
+        <p class="form__erro" id="form-erro" role="alert" hidden></p>
+        <p class="form__nota">O envio abre o WhatsApp com a mensagem já preenchida.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape">
+  <div class="wrap rodape__grid">
+    <div class="rodape__marca">
+      <img src="assets/img/logo-lockup.png" alt="Rodrigo Victor — Personal Trainer" width="560" height="376" loading="lazy">
+      <p>Personal trainer na Zona Sul do Rio de Janeiro.<br>CREF 041487-G/RJ</p>
+    </div>
+
+    <nav class="rodape__nav" aria-label="Navegação do rodapé">
+      <h2>Navegação</h2>
+      <ul>
+        <li><a href="#topo">Início</a></li>
+        <li><a href="#metodo">Método 4P</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#treinos">Treinos</a></li>
+        <li><a href="#comecar">Como começar</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+
+    <div class="rodape__social">
+      <h2>Redes sociais</h2>
+      <ul>
+        <li><a href="https://www.instagram.com/coachrodrigovictor/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></svg></a></li>
+        <li><a href="https://wa.me/5521996160489" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 20.5l1.3-4.3A8.2 8.2 0 1112 20.2a8.4 8.4 0 01-3.9-1z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M9 8.5c.4 3 2.5 5.1 5.5 5.5.6-.6.6-1.4 1.2-1.2l1.4.9c.2.9-.6 1.8-1.6 1.8-3.9 0-7.1-3.2-7.1-7.1 0-1 .9-1.8 1.8-1.6l.9 1.4c.2.6-.6.6-1.2 1.2z" fill="currentColor"/></svg></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="wrap rodape__base">
+    <p>© <span id="ano">2026</span> Rodrigo Victor Personal Trainer. Todos os direitos reservados.</p>
+    <p><a href="privacidade.html">Política de Privacidade</a></p>
+  </div>
+</footer>
+
+<a class="zap" href="https://wa.me/5521996160489?text=Ol%C3%A1%2C%20Rodrigo!%20Vim%20pelo%20site%20e%20quero%20agendar%20uma%20avalia%C3%A7%C3%A3o."
+   target="_blank" rel="noopener" aria-label="Falar com o Rodrigo no WhatsApp">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3a13 13 0 00-11.2 19.6L3 29l6.6-1.7A13 13 0 1016 3zm0 2.4a10.6 10.6 0 11-5.6 19.6l-.4-.2-3.9 1 1-3.8-.3-.4A10.6 10.6 0 0116 5.4z"/><path d="M11.6 9.6c.6-.1 1.2.1 1.5.7l.9 1.9c.2.5.1 1-.2 1.4l-.6.7c-.2.2-.2.5-.1.7a9 9 0 004 4c.2.1.5.1.7-.1l.7-.7c.4-.4.9-.4 1.4-.2l1.9.9c.6.3.8.9.7 1.5-.2 1.2-1.3 2.2-2.6 2.2-5.3 0-10.2-4.9-10.2-10.2 0-1.3 1-2.4 2.2-2.6z"/></svg>
+</a>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://rodrigovictor.com.br/#rodrigo",
+      "name": "Rodrigo Victor",
+      "jobTitle": "Personal Trainer",
+      "url": "https://rodrigovictor.com.br/",
+      "image": "https://rodrigovictor.com.br/assets/img/og-image.jpg",
+      "telephone": "+55-21-99616-0489",
+      "email": "contato@rodrigovictor.com.br",
+      "identifier": "CREF 041487-G/RJ",
+      "sameAs": ["https://www.instagram.com/coachrodrigovictor/"],
+      "areaServed": [
+        { "@type": "Place", "name": "Botafogo, Rio de Janeiro, RJ" },
+        { "@type": "Place", "name": "Flamengo, Rio de Janeiro, RJ" },
+        { "@type": "Place", "name": "Laranjeiras, Rio de Janeiro, RJ" },
+        { "@type": "Place", "name": "Humaitá, Rio de Janeiro, RJ" },
+        { "@type": "Place", "name": "Copacabana, Rio de Janeiro, RJ" },
+        { "@type": "Place", "name": "Ipanema, Rio de Janeiro, RJ" },
+        { "@type": "Place", "name": "Leblon, Rio de Janeiro, RJ" },
+        { "@type": "Place", "name": "Jardim Botânico, Rio de Janeiro, RJ" },
+        { "@type": "Place", "name": "Lagoa, Rio de Janeiro, RJ" }
+      ],
+      "knowsAbout": ["Treinamento físico", "Cinesiologia", "Biomecânica", "CrossFit", "Treino adaptado"],
+      "hasCredential": [
+        { "@type": "EducationalOccupationalCredential", "credentialCategory": "Registro profissional", "name": "CREF 041487-G/RJ" },
+        { "@type": "EducationalOccupationalCredential", "credentialCategory": "Especialização", "name": "Cinesiologia, Biomecânica e Treinamento Físico" },
+        { "@type": "EducationalOccupationalCredential", "credentialCategory": "Certificação", "name": "CrossFit Level 2" }
+      ],
+      "worksFor": { "@id": "https://rodrigovictor.com.br/#realcross" }
+    },
+    {
+      "@type": ["LocalBusiness", "HealthAndBeautyBusiness"],
+      "@id": "https://rodrigovictor.com.br/#realcross",
+      "name": "Real Cross",
+      "founder": { "@id": "https://rodrigovictor.com.br/#rodrigo" },
+      "foundingDate": "2017",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Botafogo",
+        "addressRegion": "RJ",
+        "addressCountry": "BR"
+      },
+      "areaServed": { "@type": "Place", "name": "Zona Sul, Rio de Janeiro, RJ" }
+    }
+  ]
+}
+</script>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

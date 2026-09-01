@@ -1,0 +1,500 @@
+/* =========================================================
+   Rodrigo Victor — Personal Trainer
+   Paleta e tipografia derivadas do mockup aprovado e do logo.
+   ========================================================= */
+
+/* ---------- fontes auto-hospedadas ---------- */
+@font-face{
+  font-family:"Cormorant Garamond"; font-style:normal; font-weight:300; font-display:swap;
+  src:url("../fonts/cormorant-garamond-latin-300-normal.woff2") format("woff2");
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face{
+  font-family:"Cormorant Garamond"; font-style:normal; font-weight:400; font-display:swap;
+  src:url("../fonts/cormorant-garamond-latin-400-normal.woff2") format("woff2");
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face{
+  font-family:"Jost"; font-style:normal; font-weight:300; font-display:swap;
+  src:url("../fonts/jost-latin-300-normal.woff2") format("woff2");
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face{
+  font-family:"Jost"; font-style:normal; font-weight:400; font-display:swap;
+  src:url("../fonts/jost-latin-400-normal.woff2") format("woff2");
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face{
+  font-family:"Jost"; font-style:normal; font-weight:500; font-display:swap;
+  src:url("../fonts/jost-latin-500-normal.woff2") format("woff2");
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+:root{
+  /* superfícies */
+  --ink-900:#070C0D;   /* rodapé */
+  --ink-800:#0B1214;   /* escuro base */
+  --ink-700:#0E1719;   /* escuro alternado */
+  --ink-600:#131D1E;   /* cartões */
+  --bone:#EFEDE8;      /* seção clara */
+  --bone-2:#E4E0D8;
+
+  /* dourado da marca (amostrado do arquivo do logo) */
+  --gold:#B57F4D;
+  --gold-lt:#C79A6A;
+  --gold-dp:#8A5F34;
+
+  /* texto */
+  --txt-dark:#FFFFFF;
+  --txt-dark-2:#A8B0AF;
+  --txt-light:#242A29;
+  --txt-light-2:#5C6564;
+
+  --line-dark:rgba(181,127,77,.26);
+  --line-light:rgba(36,42,41,.14);
+
+  --wrap:1180px;
+  --pad:clamp(1.25rem, 5vw, 3rem);
+  --sec-y:clamp(4.5rem, 9vw, 8rem);
+
+  --f-serif:"Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --num:lining-nums proportional-nums;
+  --f-sans:"Jost", "Helvetica Neue", Arial, sans-serif;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+
+html{scroll-behavior:smooth; scroll-padding-top:96px; -webkit-text-size-adjust:100%}
+
+body{
+  margin:0;
+  background:var(--ink-800);
+  color:var(--txt-dark-2);
+  font-family:var(--f-sans);
+  font-weight:300;
+  font-size:clamp(1rem,.96rem + .2vw,1.0625rem);
+  line-height:1.72;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+
+img{max-width:100%; height:auto; display:block}
+a{color:inherit}
+h1,h2,h3{margin:0; font-weight:400}
+p{margin:0 0 1.1em}
+ul,ol,dl{margin:0; padding:0; list-style:none}
+
+:focus-visible{outline:2px solid var(--gold-lt); outline-offset:3px; border-radius:2px}
+
+.wrap{width:100%; max-width:var(--wrap); margin-inline:auto; padding-inline:var(--pad)}
+
+.skip{
+  position:absolute; left:-9999px; top:0; z-index:200;
+  background:var(--gold); color:var(--ink-900);
+  padding:.7rem 1.2rem; font-size:.9rem;
+}
+.skip:focus{left:.5rem; top:.5rem}
+
+/* ---------- tipografia compartilhada ---------- */
+.t2{
+  font-family:var(--f-serif);
+  font-variant-numeric:var(--num); font-feature-settings:"lnum" 1;
+  font-weight:300;
+  font-size:clamp(2rem,1.35rem + 2.6vw,3.15rem);
+  line-height:1.14;
+  letter-spacing:.004em;
+  color:var(--txt-dark);
+  margin:0 0 1.1rem;
+}
+.eyebrow{
+  font-size:.7rem;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  color:var(--gold-lt);
+  margin:0 0 1.1rem;
+}
+.lead{max-width:44ch}
+
+/* ---------- botões ---------- */
+.btn{
+  display:inline-flex; align-items:center; justify-content:center;
+  min-height:50px;
+  padding:.85rem 1.9rem;
+  font-family:var(--f-sans); font-size:.78rem; font-weight:400;
+  letter-spacing:.17em; text-transform:uppercase; text-decoration:none;
+  border:1px solid transparent; cursor:pointer;
+  transition:background-color .22s ease, color .22s ease, border-color .22s ease;
+}
+.btn--gold{background:var(--gold); color:#0B1214; border-color:var(--gold)}
+.btn--gold:hover{background:var(--gold-lt); border-color:var(--gold-lt)}
+.btn--ghost{color:var(--txt-dark); border-color:rgba(255,255,255,.42)}
+.btn--ghost:hover{border-color:var(--gold-lt); color:var(--gold-lt)}
+
+/* =========================================================
+   TOPO
+   ========================================================= */
+.topo{
+  position:fixed; inset:0 0 auto 0; z-index:100;
+  background:transparent;
+  transition:background-color .3s ease, border-color .3s ease, padding .3s ease;
+  border-bottom:1px solid transparent;
+  padding-block:1.15rem;
+}
+.topo.is-fixo{
+  background:rgba(11,18,20,.94);
+  backdrop-filter:blur(10px);
+  border-bottom-color:var(--line-dark);
+  padding-block:.6rem;
+}
+.topo__wrap{
+  width:100%; max-width:var(--wrap); margin-inline:auto; padding-inline:var(--pad);
+  display:flex; align-items:center; gap:2rem;
+}
+.topo__logo{display:block; flex:0 0 auto}
+.topo__logo img{width:auto; height:72px; transition:height .3s ease}
+.topo.is-fixo .topo__logo img{height:56px}
+
+.nav{margin-left:auto}
+.nav ul{display:flex; gap:1.85rem}
+.nav a{
+  font-size:.74rem; letter-spacing:.15em; text-transform:uppercase;
+  text-decoration:none; color:var(--txt-dark-2);
+  padding-block:.4rem; transition:color .2s ease;
+}
+.nav a:hover,.nav a.is-ativo{color:var(--gold-lt)}
+
+.topo__cta{min-height:42px; padding:.6rem 1.35rem; font-size:.71rem}
+
+.menu{
+  display:none; margin-left:auto;
+  width:44px; height:44px; padding:10px;
+  background:none; border:0; cursor:pointer;
+}
+.menu span{display:block; height:1px; background:var(--txt-dark); margin:5px 0; transition:transform .25s ease, opacity .2s ease}
+.menu[aria-expanded="true"] span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.menu[aria-expanded="true"] span:nth-child(2){opacity:0}
+.menu[aria-expanded="true"] span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+
+/* =========================================================
+   HERO
+   ========================================================= */
+.hero{
+  position:relative; isolation:isolate;
+  min-height:min(100svh,860px);
+  display:flex; align-items:center;
+  padding-block:9rem 6rem;
+  background:var(--ink-900);
+}
+.hero__img{position:absolute; inset:0; z-index:-2}
+.hero__img img{width:100%; height:100%; object-fit:cover; object-position:38% 50%}
+.hero::after{
+  content:""; position:absolute; inset:0; z-index:-1;
+  background:
+    linear-gradient(96deg, rgba(7,12,13,.94) 0%, rgba(7,12,13,.86) 30%, rgba(7,12,13,.42) 62%, rgba(7,12,13,.22) 100%),
+    linear-gradient(to top, rgba(7,12,13,.85) 0%, rgba(7,12,13,0) 42%);
+}
+.hero__box{position:relative}
+.hero__t{
+  font-family:var(--f-serif); font-weight:300;
+  font-variant-numeric:var(--num); font-feature-settings:"lnum" 1;
+  font-size:clamp(2.6rem,1.5rem + 4.6vw,5rem);
+  line-height:1.03; letter-spacing:.005em;
+  color:var(--txt-dark);
+  margin:0 0 1.6rem;
+}
+.hero__t span{display:block}
+.hero__t .is-gold{color:var(--gold-lt)}
+.hero__sub{max-width:42ch; color:#CDD3D2; margin-bottom:2.1rem}
+.hero__acoes{display:flex; flex-wrap:wrap; gap:.9rem}
+.hero__cref{
+  margin:2rem 0 0; font-size:.72rem; letter-spacing:.16em;
+  text-transform:uppercase; color:rgba(199,154,106,.85);
+}
+.hero__scroll{
+  position:absolute; left:50%; bottom:2.2rem; translate:-50% 0;
+  width:38px; color:rgba(255,255,255,.5); transition:color .2s ease;
+}
+.hero__scroll:hover{color:var(--gold-lt)}
+.hero__scroll svg{width:100%}
+
+/* =========================================================
+   SEÇÕES BASE
+   ========================================================= */
+.sec{padding-block:var(--sec-y)}
+.sec--dark{background:var(--ink-800)}
+.sec--deep{background:var(--ink-700)}
+.sec--light{background:var(--bone); color:var(--txt-light-2)}
+.sec--light .t2{color:var(--txt-light)}
+.sec--light .eyebrow{color:var(--gold-dp)}
+
+/* ---------- Método 4P ---------- */
+.metodo__grid{display:grid; gap:clamp(2.5rem,5vw,4rem); grid-template-columns:minmax(0,1fr) minmax(0,1.08fr)}
+.metodo__intro .lead{margin-bottom:0}
+.pilares{
+  display:grid; gap:2.4rem 2rem;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+}
+.pilar{padding-left:1.5rem; border-left:1px solid var(--line-dark)}
+.pilar .ico{width:34px; height:34px; color:var(--gold-lt); margin-bottom:1.1rem}
+.pilar h3{
+  font-size:.79rem; letter-spacing:.19em; text-transform:uppercase;
+  color:var(--txt-dark); margin-bottom:.7rem;
+}
+.pilar p{font-size:.95rem; line-height:1.65; margin:0}
+
+/* ---------- Sobre ---------- */
+.sobre__grid{display:grid; gap:clamp(2.5rem,5vw,4.5rem); grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr); align-items:center}
+.sobre__foto img{width:100%; aspect-ratio:4/5; object-fit:cover; object-position:50% 30%}
+.sobre__txt p{max-width:56ch}
+.cred{
+  display:grid; gap:1px; margin-top:2.2rem;
+  background:var(--line-dark); border:1px solid var(--line-dark);
+}
+.cred > div{background:var(--ink-700); padding:1rem 1.2rem}
+.cred dt{font-size:.68rem; letter-spacing:.19em; text-transform:uppercase; color:var(--gold-lt); margin-bottom:.25rem}
+.cred dd{margin:0; color:var(--txt-dark); font-size:.98rem}
+
+/* ---------- Real Cross ---------- */
+.box__grid{display:grid; gap:clamp(2.5rem,5vw,4.5rem); grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr); align-items:center}
+.box__txt p{max-width:56ch}
+.box__foto img{width:100%; aspect-ratio:4/5; object-fit:cover; object-position:50% 35%}
+
+/* ---------- Treinos ---------- */
+.treinos__topo{
+  display:grid; gap:1.5rem 3rem; align-items:end;
+  grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);
+  padding-bottom:2.6rem; margin-bottom:2.8rem;
+  border-bottom:1px solid var(--line-light);
+}
+.treinos__topo .t2{margin-bottom:0}
+.treinos__topo .lead{margin-bottom:0}
+.mods{display:grid; gap:1px; grid-template-columns:repeat(5,minmax(0,1fr)); background:var(--line-light)}
+.mod{background:var(--bone); padding:2rem 1.35rem}
+.mod .ico{width:36px; height:36px; color:var(--gold-dp); margin-bottom:1.3rem}
+.mod h3{font-size:.79rem; letter-spacing:.19em; text-transform:uppercase; color:var(--txt-light); margin-bottom:.7rem}
+.mod p{font-size:.92rem; line-height:1.62; margin:0}
+
+/* ---------- Como começar ---------- */
+.passos__t{max-width:18ch}
+.passos__lista{
+  display:grid; gap:2.4rem 2.2rem;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  margin-top:3rem;
+}
+.passos__lista li{padding-top:1.4rem; border-top:1px solid var(--line-dark)}
+.passos__n{
+  display:block; font-family:var(--f-serif); font-size:2.4rem;
+  font-variant-numeric:var(--num); font-feature-settings:"lnum" 1;
+  line-height:1; color:var(--gold); margin-bottom:.9rem;
+}
+.passos__lista h3{font-size:.79rem; letter-spacing:.19em; text-transform:uppercase; color:var(--txt-dark); margin-bottom:.6rem}
+.passos__lista p{font-size:.94rem; line-height:1.65; margin:0}
+.passos__nota{
+  margin:3rem 0 0; padding-top:1.6rem; border-top:1px solid var(--line-dark);
+  font-size:.92rem; max-width:62ch; color:var(--txt-dark-2);
+}
+
+/* ---------- Faixa citação ---------- */
+.faixa{
+  position:relative; isolation:isolate;
+  padding-block:clamp(5rem,11vw,9rem);
+  background:var(--ink-900) url("../img/faixa-1400.jpg") center 28%/cover no-repeat;
+  text-align:center;
+}
+.faixa::after{content:""; position:absolute; inset:0; z-index:-1; background:linear-gradient(90deg, rgba(7,12,13,.82) 0%, rgba(7,12,13,.62) 55%, rgba(7,12,13,.72) 100%)}
+.faixa__wrap{position:relative}
+.faixa__q{
+  font-family:var(--f-serif); font-weight:300;
+  font-size:clamp(1.85rem,1.2rem + 2.4vw,3rem);
+  line-height:1.2; color:var(--txt-dark); margin:0 0 1.1rem;
+}
+.faixa__a{margin:0; font-size:.72rem; letter-spacing:.22em; text-transform:uppercase; color:var(--gold-lt)}
+
+/* ---------- Depoimentos ---------- */
+.depo__topo{margin-bottom:2.8rem}
+.depo__lista{display:grid; gap:1.4rem; grid-template-columns:repeat(3,minmax(0,1fr))}
+.card-depo{background:var(--ink-600); border:1px solid var(--line-dark); padding:2rem 1.6rem}
+.card-depo p{margin:0 0 .6rem}
+.card-depo__meta{font-size:.75rem; letter-spacing:.14em; text-transform:uppercase; color:var(--gold-lt); margin:0}
+.card-depo.is-vazio{
+  border-style:dashed; color:rgba(168,176,175,.6);
+  display:flex; flex-direction:column; justify-content:center; min-height:170px;
+}
+
+/* ---------- CTA / contato ---------- */
+.cta{
+  position:relative; isolation:isolate;
+  padding-block:var(--sec-y);
+  background:var(--ink-900);
+}
+.cta::after{
+  content:""; position:absolute; inset:0; z-index:-1;
+  background:radial-gradient(120% 90% at 8% 0%, rgba(181,127,77,.14) 0%, rgba(181,127,77,0) 58%);
+}
+.cta__grid{display:grid; gap:clamp(2.5rem,5vw,4.5rem); grid-template-columns:minmax(0,1fr) minmax(0,.85fr)}
+.cta__t{max-width:16ch}
+.cta p{max-width:46ch}
+
+.contato{display:grid; gap:.95rem; margin-top:2.2rem}
+.contato li{display:flex; align-items:center; gap:.85rem; font-size:.98rem}
+.contato svg{width:20px; height:20px; flex:0 0 auto; color:var(--gold-lt)}
+.contato a{color:var(--txt-dark); text-decoration:none; border-bottom:1px solid var(--line-dark); transition:color .2s ease, border-color .2s ease}
+.contato a:hover{color:var(--gold-lt); border-color:var(--gold-lt)}
+
+.bairros{
+  margin-top:2.4rem; padding-top:1.6rem;
+  border-top:1px solid var(--line-dark); max-width:46ch;
+}
+.bairros h3{
+  font-size:.7rem; letter-spacing:.22em; text-transform:uppercase;
+  color:var(--gold-lt); margin:0 0 .8rem;
+}
+.bairros p{font-size:.92rem; line-height:1.7; margin:0}
+
+/* ---------- Formulário ---------- */
+.form{background:var(--ink-700); border:1px solid var(--line-dark); padding:clamp(1.6rem,3vw,2.2rem)}
+.form__t{
+  font-family:var(--f-serif); font-size:1.6rem; color:var(--txt-dark);
+  margin:0 0 1.5rem; line-height:1.2;
+}
+.form label{display:block; font-size:.7rem; letter-spacing:.17em; text-transform:uppercase; color:var(--gold-lt); margin-bottom:.4rem}
+.form .opc{text-transform:none; letter-spacing:.04em; color:var(--txt-dark-2)}
+.form input[type="text"],.form input[type="tel"],.form select,.form textarea{
+  width:100%; margin-bottom:1.15rem;
+  padding:.8rem .95rem;
+  background:var(--ink-800); color:var(--txt-dark);
+  border:1px solid var(--line-dark); border-radius:0;
+  font-family:var(--f-sans); font-size:1rem; font-weight:300;
+  transition:border-color .2s ease;
+}
+.form textarea{resize:vertical; min-height:88px}
+.form input:focus,.form select:focus,.form textarea:focus{border-color:var(--gold-lt)}
+.form input:user-invalid,.form textarea:user-invalid{border-color:#C4645A}
+
+.check{display:flex; gap:.7rem; align-items:flex-start; margin-bottom:1.5rem}
+.check input{flex:0 0 auto; width:17px; height:17px; margin-top:.28rem; accent-color:var(--gold)}
+.check span{
+  font-size:.83rem; line-height:1.55; letter-spacing:0;
+  text-transform:none; color:var(--txt-dark-2);
+}
+.check a{color:var(--gold-lt)}
+
+.form__btn{width:100%}
+.form__erro{margin:.9rem 0 0; font-size:.85rem; color:#E08C82}
+.form__nota{margin:.9rem 0 0; font-size:.8rem; color:rgba(168,176,175,.75)}
+
+/* =========================================================
+   RODAPÉ
+   ========================================================= */
+.rodape{background:var(--ink-900); border-top:1px solid var(--line-dark); padding-top:clamp(3rem,6vw,4.5rem)}
+.rodape__grid{display:grid; gap:2.5rem 3rem; grid-template-columns:minmax(0,1.4fr) repeat(2,minmax(0,1fr))}
+.rodape__marca img{width:auto; height:76px; margin-bottom:1.2rem}
+.rodape__marca p{font-size:.9rem; margin:0}
+.rodape h2{font-size:.7rem; letter-spacing:.22em; text-transform:uppercase; color:var(--gold-lt); margin:0 0 1.1rem}
+.rodape__nav ul{display:grid; gap:.6rem}
+.rodape__nav a{font-size:.92rem; text-decoration:none; transition:color .2s ease}
+.rodape__nav a:hover{color:var(--gold-lt)}
+.rodape__social ul{display:flex; gap:.7rem}
+.rodape__social a{
+  display:grid; place-items:center; width:42px; height:42px;
+  border:1px solid var(--line-dark); color:var(--gold-lt);
+  transition:border-color .2s ease, background-color .2s ease;
+}
+.rodape__social a:hover{border-color:var(--gold-lt); background:rgba(181,127,77,.1)}
+.rodape__social svg{width:19px; height:19px}
+.rodape__base{
+  display:flex; flex-wrap:wrap; gap:.6rem 2rem; justify-content:space-between;
+  margin-top:clamp(2.5rem,5vw,3.5rem); padding-block:1.5rem;
+  border-top:1px solid rgba(181,127,77,.16);
+  font-size:.8rem;
+}
+.rodape__base p{margin:0}
+.rodape__base a{color:var(--gold-lt); text-decoration:none}
+.rodape__base a:hover{text-decoration:underline}
+
+/* ---------- botão flutuante WhatsApp ---------- */
+.zap{
+  position:fixed; right:clamp(1rem,3vw,1.75rem); bottom:clamp(1rem,3vw,1.75rem); z-index:90;
+  display:grid; place-items:center; width:56px; height:56px;
+  border-radius:50%; background:#1FA855; color:#fff;
+  box-shadow:0 6px 22px rgba(0,0,0,.4);
+  transition:transform .2s ease, background-color .2s ease;
+}
+.zap:hover{transform:translateY(-2px); background:#189347}
+.zap svg{width:30px; height:30px; fill:currentColor}
+
+/* =========================================================
+   RESPONSIVO
+   ========================================================= */
+@media (max-width:1080px){
+  .nav ul{gap:1.25rem}
+  .nav a{font-size:.69rem; letter-spacing:.12em}
+  .mods{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .passos__lista{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+
+@media (max-width:900px){
+  .metodo__grid,.sobre__grid,.box__grid,.cta__grid,.treinos__topo{grid-template-columns:minmax(0,1fr)}
+  .sobre__grid{gap:2.2rem}
+  .box__grid .box__foto{order:-1}
+  .sobre__foto img{aspect-ratio:1/1; object-position:50% 40%}
+  .box__foto img{aspect-ratio:1/1; object-position:50% 46%}
+  .rodape__grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .rodape__marca{grid-column:1/-1}
+  .depo__lista{grid-template-columns:minmax(0,1fr)}
+  .card-depo.is-vazio{min-height:120px}
+}
+
+@media (max-width:820px){
+  .nav{
+    position:fixed; inset:0 0 auto 0;
+    background:rgba(9,15,16,.985); backdrop-filter:blur(12px);
+    padding:6.5rem var(--pad) 2.5rem;
+    border-bottom:1px solid var(--line-dark);
+    transform:translateY(-100%); visibility:hidden;
+    transition:transform .32s cubic-bezier(.4,0,.2,1), visibility .32s;
+  }
+  .nav.is-aberto{transform:translateY(0); visibility:visible}
+  .nav ul{flex-direction:column; gap:0}
+  .nav a{display:block; padding:.95rem 0; font-size:.85rem; border-bottom:1px solid rgba(181,127,77,.14)}
+  .menu{display:block}
+  .topo__cta{display:none}
+  .topo__wrap{gap:1rem}
+}
+
+@media (max-width:720px){
+  .hero{min-height:auto; padding-block:8rem 5rem; text-align:left}
+  .hero__img img{object-position:50% 18%}
+  .hero::after{
+    background:
+      linear-gradient(to top, rgba(7,12,13,.97) 0%, rgba(7,12,13,.9) 34%, rgba(7,12,13,.5) 68%, rgba(7,12,13,.35) 100%);
+  }
+  .hero__box{padding-top:34svh}
+  .hero__acoes .btn{flex:1 1 100%}
+  .hero__scroll{display:none}
+  .pilares,.mods,.passos__lista{grid-template-columns:minmax(0,1fr)}
+  .pilar{padding-left:1.2rem}
+  .mods{gap:1px}
+  .rodape__grid{grid-template-columns:minmax(0,1fr)}
+  .zap{width:52px; height:52px}
+  .zap svg{width:27px; height:27px}
+}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001ms !important; transition-duration:.001ms !important}
+}
+
+/* entrada única do hero, apenas no carregamento */
+@media (prefers-reduced-motion:no-preference){
+  .hero__t span,.hero__sub,.hero__acoes,.hero__cref{
+    opacity:0; animation:sobe .8s cubic-bezier(.22,.8,.3,1) forwards;
+  }
+  .hero__t span:nth-child(1){animation-delay:.10s}
+  .hero__t span:nth-child(2){animation-delay:.20s}
+  .hero__t span:nth-child(3){animation-delay:.30s}
+  .hero__sub{animation-delay:.44s}
+  .hero__acoes{animation-delay:.56s}
+  .hero__cref{animation-delay:.68s}
+  @keyframes sobe{from{opacity:0; transform:translateY(18px)} to{opacity:1; transform:none}}
+}
