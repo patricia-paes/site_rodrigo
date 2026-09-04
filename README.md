@@ -91,6 +91,7 @@ Já configurados:
 
 - WhatsApp: `(21) 99616-0489` → `wa.me/5521996160489`
 - Instagram: `@coachrodrigovictor`
+- LinkedIn: `linkedin.com/in/rodrigo-ferreira-62576147`
 - CREF: `041487-G/RJ`
 
 O e-mail `contato@rodrigovictor.com.br` veio do mockup e **ainda não foi confirmado**.
@@ -113,6 +114,11 @@ vale reintroduzir — é bom para SEO. Se não for, o feed do Instagram cumpre o
 As fotos originais são de céu azul e luz forte, e não conviviam com a paleta escura do
 mockup aprovado. Todas passaram por uma graduação de cor: dessaturação, escurecimento e
 deslocamento dos médios em direção ao tom da marca (`#0B1214`).
+
+A seção **Sobre** usa fundo claro (`--bone`) e a foto da corrida na orla, recortada em 0,62:1.
+Nessa seção a imagem preenche a altura da coluna de texto (posicionamento absoluto acima de
+900px), de modo que a base da foto e a do quadro de credenciais coincidem exatamente. O
+quadro fica em duas colunas no desktop e em uma abaixo de 720px.
 
 O hero foi recortado para 2:1 na mesma proporção e enquadramento do modelo aprovado, o
 que deixa o Rodrigo à direita e livra a área de texto à esquerda. O hero mobile usa um

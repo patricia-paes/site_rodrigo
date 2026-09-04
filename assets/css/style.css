@@ -243,16 +243,31 @@ ul,ol,dl{margin:0; padding:0; list-style:none}
 .pilar p{font-size:.95rem; line-height:1.65; margin:0}
 
 /* ---------- Sobre ---------- */
-.sobre__grid{display:grid; gap:clamp(2.5rem,5vw,4.5rem); grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr); align-items:center}
-.sobre__foto img{width:100%; aspect-ratio:4/5; object-fit:cover; object-position:50% 30%}
-.sobre__txt p{max-width:56ch}
-.cred{
-  display:grid; gap:1px; margin-top:2.2rem;
-  background:var(--line-dark); border:1px solid var(--line-dark);
+.sobre__grid{
+  display:grid; gap:clamp(2.5rem,5vw,4.5rem);
+  grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);
+  align-items:stretch;
 }
-.cred > div{background:var(--ink-700); padding:1rem 1.2rem}
-.cred dt{font-size:.68rem; letter-spacing:.19em; text-transform:uppercase; color:var(--gold-lt); margin-bottom:.25rem}
-.cred dd{margin:0; color:var(--txt-dark); font-size:.98rem}
+/* a imagem acompanha a altura da coluna de texto, então as bases coincidem */
+.sobre__foto img{width:100%; aspect-ratio:4/5; object-fit:cover; object-position:50% 32%}
+@media (min-width:901px){
+  .sobre__foto{position:relative; min-height:26rem}
+  .sobre__foto picture{position:absolute; inset:0; display:block}
+  .sobre__foto img{height:100%; aspect-ratio:auto}
+}
+.sobre__txt{display:flex; flex-direction:column}
+.sobre__txt p{max-width:56ch}
+.sobre__txt p:last-of-type{margin-bottom:2.2rem}
+
+/* credenciais em duas colunas, encostadas no fim da imagem */
+.cred{
+  display:grid; gap:1px; grid-template-columns:repeat(2,minmax(0,1fr));
+  margin-top:auto;
+  background:var(--line-light); border:1px solid var(--line-light);
+}
+.cred > div{background:var(--bone); padding:.85rem 1.05rem}
+.cred dt{font-size:.63rem; letter-spacing:.19em; text-transform:uppercase; color:var(--gold-dp); margin-bottom:.2rem}
+.cred dd{margin:0; color:var(--txt-light); font-size:.9rem; line-height:1.45}
 
 /* ---------- Real Cross ---------- */
 .box__grid{display:grid; gap:clamp(2.5rem,5vw,4.5rem); grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr); align-items:center}
@@ -437,7 +452,8 @@ ul,ol,dl{margin:0; padding:0; list-style:none}
   .metodo__grid,.sobre__grid,.box__grid,.cta__grid,.treinos__topo{grid-template-columns:minmax(0,1fr)}
   .sobre__grid{gap:2.2rem}
   .box__grid .box__foto{order:-1}
-  .sobre__foto img{aspect-ratio:1/1; object-position:50% 40%}
+  .cred{grid-template-columns:repeat(2,minmax(0,1fr)); margin-top:0}
+
   .box__foto img{aspect-ratio:1/1; object-position:50% 46%}
   .rodape__grid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .rodape__marca{grid-column:1/-1}
@@ -472,7 +488,7 @@ ul,ol,dl{margin:0; padding:0; list-style:none}
   .hero__box{padding-top:34svh}
   .hero__acoes .btn{flex:1 1 100%}
   .hero__scroll{display:none}
-  .pilares,.mods,.passos__lista{grid-template-columns:minmax(0,1fr)}
+  .pilares,.mods,.passos__lista,.cred{grid-template-columns:minmax(0,1fr)}
   .pilar{padding-left:1.2rem}
   .mods{gap:1px}
   .rodape__grid{grid-template-columns:minmax(0,1fr)}
