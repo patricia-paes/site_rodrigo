@@ -5,6 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Rodrigo Victor — Personal Trainer na Zona Sul do Rio de Janeiro</title>
 <meta name="description" content="Personal trainer na Zona Sul do Rio de Janeiro. Treinamento individualizado com base em análise do movimento, para todas as idades e níveis. CREF 041487-G/RJ.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="Rodrigo Victor">
+<meta name="keywords" content="Rodrigo Victor, personal trainer Rio de Janeiro, personal trainer Zona Sul, personal trainer Botafogo, treinamento personalizado, treino em condomínio, treino em residência, treino ao ar livre, treino online, Método 4P, CREF 041487-G/RJ">
+<meta name="geo.region" content="BR-RJ">
+<meta name="geo.placename" content="Rio de Janeiro">
 <link rel="canonical" href="https://rodrigovictor.com.br/">
 
 <meta property="og:type" content="website">
@@ -17,6 +22,9 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Rodrigo Victor — Personal Trainer na Zona Sul do Rio">
+<meta name="twitter:description" content="Treinamento individualizado com base em análise do movimento. Presencial na Zona Sul do Rio e online. CREF 041487-G/RJ.">
+<meta name="twitter:image" content="https://rodrigovictor.com.br/assets/img/og-image.jpg">
 <meta name="theme-color" content="#0B1214">
 
 <link rel="icon" href="assets/img/favicon.ico" sizes="any">
@@ -418,6 +426,15 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebSite",
+      "@id": "https://rodrigovictor.com.br/#website",
+      "name": "Rodrigo Victor — Personal Trainer",
+      "url": "https://rodrigovictor.com.br/",
+      "inLanguage": "pt-BR",
+      "description": "Personal trainer na Zona Sul do Rio de Janeiro. Treinamento individualizado com base em análise do movimento, para todas as idades e níveis.",
+      "publisher": { "@id": "https://rodrigovictor.com.br/#rodrigo" }
+    },
+    {
       "@type": "Person",
       "@id": "https://rodrigovictor.com.br/#rodrigo",
       "name": "Rodrigo Victor",
@@ -463,6 +480,62 @@
         "addressCountry": "BR"
       },
       "areaServed": { "@type": "Place", "name": "Zona Sul, Rio de Janeiro, RJ" }
+    },
+    {
+      "@type": "OfferCatalog",
+      "@id": "https://rodrigovictor.com.br/#servicos",
+      "name": "Modalidades de treinamento Rodrigo Victor",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Treino presencial",
+            "description": "Treinamento personalizado em estrutura completa, na Real Cross ou na academia do aluno.",
+            "areaServed": { "@type": "Place", "name": "Zona Sul, Rio de Janeiro, RJ" },
+            "provider": { "@id": "https://rodrigovictor.com.br/#rodrigo" }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Treino em condomínio",
+            "description": "Treino personalizado na academia do condomínio do aluno.",
+            "areaServed": { "@type": "Place", "name": "Rio de Janeiro, RJ" },
+            "provider": { "@id": "https://rodrigovictor.com.br/#rodrigo" }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Treino em residência",
+            "description": "Treinamento com conforto e privacidade na residência do aluno.",
+            "areaServed": { "@type": "Place", "name": "Rio de Janeiro, RJ" },
+            "provider": { "@id": "https://rodrigovictor.com.br/#rodrigo" }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Treino ao ar livre",
+            "description": "Treino personalizado em espaços externos como Aterro, Lagoa, praia ou praça.",
+            "areaServed": { "@type": "Place", "name": "Rio de Janeiro, RJ" },
+            "provider": { "@id": "https://rodrigovictor.com.br/#rodrigo" }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Treino online",
+            "description": "Programa e acompanhamento à distância para quem viaja ou treina fora do Rio.",
+            "provider": { "@id": "https://rodrigovictor.com.br/#rodrigo" }
+          }
+        }
+      ]
     }
   ]
 }
