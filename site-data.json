@@ -76,7 +76,7 @@
         "addressRegion": "RJ",
         "addressCountry": "BR"
       },
-      "locationNote": "Base no Rio de Janeiro, RJ. Local, deslocamento e viabilidade da produção são confirmados no orçamento.",
+      "locationNote": "Atendimento exclusivamente na cidade do Rio de Janeiro, RJ. A viabilidade de cada produção é avaliada pelo endereço, data e escopo.",
       "contact": {
         "telephone": "+55 21 99616-0489",
         "whatsapp": "https://wa.me/5521996160489",
@@ -102,7 +102,7 @@
         {
           "name": "Turismo e destinos",
           "url": "https://rodrigovictor.com.br/visionair/filmagem-drone-turismo-destinos/",
-          "description": "Apresente paisagens, hospedagens e experiências com imagens aéreas. Produção da VISIONAIR com base no Rio de Janeiro e deslocamentos sob consulta."
+          "description": "Apresente paisagens, hospedagens e experiências com imagens aéreas. Produção da VISIONAIR exclusivamente na cidade do Rio de Janeiro."
         },
         {
           "name": "Produção audiovisual",
@@ -111,7 +111,10 @@
         }
       ],
       "aircraftRegistration": "Cadastro da aeronave ANAC/SISANT PP-996160489. Cada produção considera as condições do local e as autorizações aplicáveis.",
-      "booking": "Entre em contato pelo WhatsApp para confirmar valores, disponibilidade e condições. O site não realiza reservas nem envia mensagens automaticamente."
+      "booking": "Entre em contato pelo WhatsApp para confirmar valores, disponibilidade e condições. O site não realiza reservas nem envia mensagens automaticamente.",
+      "areaServed": [
+        "Rio de Janeiro (cidade)"
+      ]
     }
   }
 }

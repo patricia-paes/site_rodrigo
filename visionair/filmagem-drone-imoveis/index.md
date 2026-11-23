@@ -47,7 +47,7 @@ Sim, esses usos podem orientar a produção. Informe os canais e formatos deseja
 Envie: Endereço, tipo de imóvel, áreas que precisam aparecer, canais de divulgação e data desejada.
 
 - WhatsApp: +55 21 99616-0489 — https://wa.me/5521996160489
-- Base: Rio de Janeiro, RJ. Outros municípios, disponibilidade e deslocamento sob consulta.
+- Área de atendimento: exclusivamente a cidade do Rio de Janeiro, RJ.
 - [Portfólio](https://rodrigovictor.com.br/visionair/#portfolio)
 - [Instagram](https://www.instagram.com/rv.visionair/)
 - [Termos](https://rodrigovictor.com.br/termos/) · [Privacidade](https://rodrigovictor.com.br/privacidade.html)

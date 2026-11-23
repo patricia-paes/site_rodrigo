@@ -11,7 +11,7 @@ Filmagens e imagens aéreas para imóveis, arquitetura e construção, eventos, 
 - [Filmagem com drone para imóveis no Rio de Janeiro](https://rodrigovictor.com.br/visionair/filmagem-drone-imoveis/)
 - [Filmagem aérea para arquitetura e obras no Rio de Janeiro](https://rodrigovictor.com.br/visionair/filmagem-aerea-arquitetura-obras/)
 - [Filmagem de eventos com drone no Rio de Janeiro](https://rodrigovictor.com.br/visionair/filmagem-eventos-drone/)
-- [Filmagem com drone para turismo e destinos](https://rodrigovictor.com.br/visionair/filmagem-drone-turismo-destinos/)
+- [Filmagem com drone para turismo no Rio de Janeiro](https://rodrigovictor.com.br/visionair/filmagem-drone-turismo-destinos/)
 - [Produção audiovisual com drone no Rio de Janeiro](https://rodrigovictor.com.br/visionair/producao-audiovisual-rio-de-janeiro/)
 
 ## Portfólio
@@ -30,7 +30,7 @@ Cadastro da aeronave ANAC/SISANT: PP-996160489. Uso não recreativo na atividade
 
 - WhatsApp: +55 21 99616-0489 — https://wa.me/5521996160489
 - Instagram: https://www.instagram.com/rv.visionair/
-- Base: Rio de Janeiro, RJ, Brasil. Atendimento e deslocamento confirmados no orçamento.
+- Área de atendimento: somente a cidade do Rio de Janeiro, RJ, Brasil. A viabilidade de cada local é avaliada no orçamento.
 - [Contato](https://rodrigovictor.com.br/contato/) · [Termos](https://rodrigovictor.com.br/termos/) · [Privacidade](https://rodrigovictor.com.br/privacidade.html)
 
 O formulário prepara uma mensagem no WhatsApp para revisão e envio pelo visitante. Não confirma automaticamente reserva ou contratação.

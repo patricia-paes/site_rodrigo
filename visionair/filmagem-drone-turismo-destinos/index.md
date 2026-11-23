@@ -1,6 +1,6 @@
-# Filmagem com drone para turismo e destinos
+# Filmagem com drone para turismo no Rio de Janeiro
 
-> Mostre o lugar e a experiência que ele oferece. Imagens aéreas para aproximar o público de paisagens, hospedagens e destinos, com base de atendimento no Rio de Janeiro.
+> Mostre o lugar e a experiência que ele oferece. Imagens aéreas para aproximar o público de paisagens, hospedagens e destinos, com atendimento na cidade do Rio de Janeiro.
 
 Página oficial: https://rodrigovictor.com.br/visionair/filmagem-drone-turismo-destinos/
 
@@ -26,13 +26,13 @@ Informe o endereço ou os pontos de captação, os períodos de maior movimento 
 
 ## Entregas
 
-A proposta pode combinar fotografias aéreas e vídeos, com versões para o site e para redes sociais. O roteiro, as locações, a duração e os formatos são definidos antes da captação. Produções fora da cidade do Rio de Janeiro dependem de consulta sobre disponibilidade, logística e deslocamento.
+A proposta pode combinar fotografias aéreas e vídeos, com versões para o site e para redes sociais. O roteiro, as locações, a duração e os formatos são definidos antes da captação. O atendimento é exclusivo na cidade do Rio de Janeiro.
 
 ## Perguntas frequentes
 
 ### Vocês fazem produções fora do Rio?
 
-A VISIONAIR tem base no Rio de Janeiro. Outros locais são avaliados individualmente; informe o destino para confirmar disponibilidade e condições.
+Não. A VISIONAIR atende somente na cidade do Rio de Janeiro. Informe o endereço da produção para avaliarmos a viabilidade no local.
 
 ### Posso pedir captação em um parque ou área protegida?
 
@@ -47,7 +47,7 @@ Sim, o uso pretendido deve orientar a proposta, inclusive os formatos de entrega
 Envie: Destino, endereços ou pontos de interesse, objetivo da campanha, canais de divulgação e período desejado.
 
 - WhatsApp: +55 21 99616-0489 — https://wa.me/5521996160489
-- Base: Rio de Janeiro, RJ. Outros municípios, disponibilidade e deslocamento sob consulta.
+- Área de atendimento: exclusivamente a cidade do Rio de Janeiro, RJ.
 - [Portfólio](https://rodrigovictor.com.br/visionair/#portfolio)
 - [Instagram](https://www.instagram.com/rv.visionair/)
 - [Termos](https://rodrigovictor.com.br/termos/) · [Privacidade](https://rodrigovictor.com.br/privacidade.html)

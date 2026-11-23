@@ -209,7 +209,7 @@ O conteúdo e o HTML das páginas são gerados por `python3 scripts/build-vision
 Não há dependência de Python na hospedagem; os HTMLs gerados são versionados.
 O estilo compartilhado fica em `visionair/services.css`.
 
-Somente a cidade do Rio de Janeiro está declarada como área confirmada da VISIONAIR.
-Outros municípios dependem de confirmação. Não publicar clientes, localizações,
+A VISIONAIR atende exclusivamente na cidade do Rio de Janeiro, conforme confirmação
+da proprietária em 23/11/2026. Não publicar clientes, localizações,
 objetivos ou resultados de projetos sem informações e autorização para divulgação.
 As imagens de referência mantêm seus créditos e não representam serviços realizados.

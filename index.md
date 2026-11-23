@@ -40,7 +40,7 @@ Os formulários preparam uma mensagem no WhatsApp para revisão e envio pelo vis
 
 ## VISIONAIR
 
-Rodrigo também oferece produção audiovisual com drone pela [VISIONAIR](https://rodrigovictor.com.br/visionair/), para imóveis, arquitetura e construção, eventos, turismo e destinos. Instagram: https://www.instagram.com/rv.visionair/. O WhatsApp comercial é o mesmo.
+Rodrigo também oferece produção audiovisual com drone pela [VISIONAIR](https://rodrigovictor.com.br/visionair/), para imóveis, arquitetura e construção, eventos, turismo e destinos, com atendimento somente na cidade do Rio de Janeiro. Instagram: https://www.instagram.com/rv.visionair/. O WhatsApp comercial é o mesmo.
 
 ## Páginas principais
 

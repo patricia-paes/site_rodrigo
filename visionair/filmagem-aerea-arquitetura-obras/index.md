@@ -47,7 +47,7 @@ Comunique a alteração para revisar a disponibilidade e as condições de reage
 Envie: Endereço, etapa da obra, responsável pelo acesso, número de visitas, cronograma e finalidade das imagens.
 
 - WhatsApp: +55 21 99616-0489 — https://wa.me/5521996160489
-- Base: Rio de Janeiro, RJ. Outros municípios, disponibilidade e deslocamento sob consulta.
+- Área de atendimento: exclusivamente a cidade do Rio de Janeiro, RJ.
 - [Portfólio](https://rodrigovictor.com.br/visionair/#portfolio)
 - [Instagram](https://www.instagram.com/rv.visionair/)
 - [Termos](https://rodrigovictor.com.br/termos/) · [Privacidade](https://rodrigovictor.com.br/privacidade.html)
