@@ -11,6 +11,6 @@ DirectoryIndex index.php index.html
 </IfModule>
 <IfModule mod_headers.c>
   <FilesMatch "^(index\.md|llms\.txt)$">
-    Header set Link "<https://rodrigovictor.com.br/llms.txt>; rel=\"describedby\"; type=\"text/plain\""
+    Header set Link "<https://rodrigovictor.com.br/llms.txt>; rel=describedby"
   </FilesMatch>
 </IfModule>

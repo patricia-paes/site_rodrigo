@@ -10,7 +10,7 @@ Filmagens e imagens aéreas para imóveis, arquitetura e construção, eventos, 
 
 ## Portfólio
 
-O [portfólio publicado](https://rodrigovictor.com.br/visionair/#portfolio) reúne um filme e publicações de @rv.visionair. Imagens ilustrativas de apresentação e serviços estão identificadas no rodapé da página.
+O [portfólio publicado](https://rodrigovictor.com.br/visionair/#portfolio) apresenta o filme “Histórias à beira-mar”, uma produção da VISIONAIR de 33 segundos. As seções de apresentação e serviços usam fotografias reais de referência, licenciadas pelo Unsplash, e não representam trabalhos de Rodrigo Victor. [Créditos e fontes das fotografias](https://rodrigovictor.com.br/visionair/creditos.html).
 
 ## Processo
 

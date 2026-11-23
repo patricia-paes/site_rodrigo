@@ -184,12 +184,16 @@ o modelo, a validade da certidão, CPF, número de série ou o documento integra
 
 A fotografia de Rodrigo e o vídeo de 33 segundos foram fornecidos pela proprietária.
 O vídeo está em MP4/H.264, otimizado para a web, sem reprodução automática.
-As quatro publicações do Instagram foram reutilizadas com autorização da proprietária;
-cada miniatura leva ao respectivo post em @rv.visionair.
-As imagens de apresentação e serviços são ilustrativas, geradas por IA; a paisagem
-fotográfica é de Shai Pal / Unsplash, com crédito na página:
-https://unsplash.com/photos/sugarloaf-mountain-and-guanabara-bay-at-sunset-G3qe7t13s1I
+As imagens geradas por IA e as miniaturas promocionais do Instagram foram removidas
+em 23/11/2026. A apresentação e os serviços usam fotografias reais do Unsplash,
+com fontes e autores registrados em `visionair/creditos.html`. A capa é de Marcos
+Paulo Prado; as demais fotos são de Frederico Ferreira, Freysteinn G. Jonsson, Roger Ce,
+Shai Pal e nikldn. As páginas originais informam a licença Unsplash, que permite
+uso comercial. Os arquivos apenas receberam redimensionamento, recorte para a
+prévia social e compressão. Fotos de referência não compõem o portfólio de Rodrigo.
+O portfólio destaca o filme real fornecido e mantém acesso ao Instagram oficial.
 
-O layout segue o mockup aprovado: hero, sobre, cinco serviços, galeria com filtros,
+O layout segue o mockup aprovado: hero, sobre, cinco serviços, filme do portfólio,
 diferenciais, cinco etapas, operação responsável, seis perguntas e contato.
-No celular, serviços e galeria usam navegação horizontal com indicadores acessíveis.
+No celular, os serviços usam navegação horizontal com indicadores acessíveis.
+O filme abre em um diálogo com controles de reprodução, sem autoplay.
