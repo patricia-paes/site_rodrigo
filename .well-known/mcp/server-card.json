@@ -1,0 +1,32 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/v1/server-card.schema.json",
+  "name": "br.com.rodrigovictor/site",
+  "title": "Rodrigo Victor — informações públicas",
+  "version": "1.0.0",
+  "description": "Consulta pública de serviços, contatos e páginas de Rodrigo Victor e VISIONAIR.",
+  "websiteUrl": "https://rodrigovictor.com.br/",
+  "repository": {
+    "url": "https://github.com/patricia-paes/site_rodrigo",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://rodrigovictor.com.br/mcp/",
+      "supportedProtocolVersions": [
+        "2025-11-25",
+        "2025-06-18",
+        "2025-03-26"
+      ]
+    }
+  ],
+  "capabilities": {
+    "tools": {
+      "listChanged": false
+    },
+    "resources": {
+      "subscribe": false,
+      "listChanged": false
+    }
+  }
+}

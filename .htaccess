@@ -1,0 +1,16 @@
+# Hostinger / LiteSpeed: keep the existing static design; negotiate only the home.
+DirectoryIndex index.php index.html
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule ^index\.html$ index.php [L]
+  RewriteRule ^mcp/server-card/?$ .well-known/mcp/server-card.json [L]
+</IfModule>
+<IfModule mod_mime.c>
+  AddType text/markdown .md
+  AddCharset UTF-8 .md .txt .json
+</IfModule>
+<IfModule mod_headers.c>
+  <FilesMatch "^(index\.md|llms\.txt)$">
+    Header set Link "<https://rodrigovictor.com.br/llms.txt>; rel=\"describedby\"; type=\"text/plain\""
+  </FilesMatch>
+</IfModule>

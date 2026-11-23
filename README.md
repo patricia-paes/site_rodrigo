@@ -3,50 +3,31 @@
 Site institucional de Rodrigo Victor, personal trainer na Zona Sul do Rio de Janeiro.
 CREF 041487-G/RJ.
 
-Site estático em HTML, CSS e JavaScript puro. Sem build, sem dependências de runtime,
-sem framework. Basta servir os arquivos.
+Páginas em HTML, CSS e JavaScript, com dois pontos PHP 8 para negociação de conteúdo e consultas MCP. A produção usa Hostinger/LiteSpeed.
 
----
+## Publicação
 
-## Publicar no GitHub Pages
+O repositório `patricia-paes/site_rodrigo`, branch `main`, é a fonte da implantação existente na Hostinger. Preserve todos os diretórios, inclusive `visionair/` e `.well-known/`, e o arquivo `.htaccess`.
 
-1. Crie o repositório e envie os arquivos:
+Não mudar este domínio para GitHub Pages: Pages não executa o PHP necessário para a home em Markdown, os cabeçalhos HTTP e o endpoint MCP.
 
-```bash
-git init
-git add .
-git commit -m "Site inicial"
-git branch -M main
-git remote add origin git@github.com:USUARIO/REPOSITORIO.git
-git push -u origin main
-```
+- `index.php` serve o `index.html` aprovado ou `index.md`, conforme `Accept` e seus pesos `q`.
+- A resposta da home anuncia `llms.txt`, o Markdown alternativo e o MCP Server Card pelo cabeçalho `Link`; `Vary: Accept` separa as representações.
+- `.htaccess` define `DirectoryIndex index.php index.html`, MIME de Markdown e a rota adicional `/mcp/server-card`.
+- `mcp/index.php` é um endpoint público, sem estado e somente leitura. Não consulta agenda, clientes, preços privados nem sistemas externos.
+- `site-data.json` alimenta as consultas. Atualize-o junto com as páginas e as versões Markdown quando contatos ou serviços mudarem.
+- `robots.txt` permite busca e uso como contexto (`search=yes, ai-input=yes`) e declara oposição a treinamento (`ai-train=no`). Trata-se de uma preferência de uso, não um bloqueio de segurança.
+- O endereço estruturado contém apenas a localidade confirmada (Rio de Janeiro/RJ/BR). Não há endereço de rua publicado ou inventado.
 
-2. No GitHub, vá em **Settings → Pages** e aponte *Source* para a branch `main`, pasta `/ (root)`.
+### Verificação
 
-3. O arquivo `CNAME` já contém `rodrigovictor.com.br`. No painel do registrador do domínio,
-   crie os registros:
+O MCP responde a `initialize`, `ping`, `tools/list`, `tools/call`, `resources/list` e `resources/read`. Aceita os protocolos 2025-11-25, 2025-06-18 e 2025-03-26. Requisições POST usam JSON-RPC; GET retorna 405 porque não há stream SSE. As únicas consultas são `get_business_information` e `list_services`, com `business` igual a `personal_trainer` ou `visionair`.
 
-| Tipo  | Nome  | Valor |
-|-------|-------|-------|
-| A     | `@`   | `185.199.108.153` |
-| A     | `@`   | `185.199.109.153` |
-| A     | `@`   | `185.199.110.153` |
-| A     | `@`   | `185.199.111.153` |
-| CNAME | `www` | `USUARIO.github.io` |
+O Server Card está em `/.well-known/mcp/server-card.json`, mantendo o caminho solicitado pelo auditor. O formato segue os campos atuais da extensão de Server Cards, sucessora da SEP-1649. O campo adicional `capabilities` reflete a resposta real de inicialização.
 
-4. Depois que o DNS propagar, marque **Enforce HTTPS** em Settings → Pages.
+A integração WebMCP está preparada, mas ainda não ativada nas páginas: o navegador de validação não oferece essa API, e a ativação experimental está bloqueada neste ambiente. Os testes de contrato passaram; falta chamar as ferramentas em um navegador com suporte nativo antes de incluir `<script src="/assets/js/agent-tools.js" defer></script>` nas páginas. O arquivo detecta `document.modelContext` e a implementação antiga em `navigator.modelContext`. O navegador precisa oferecer a API; navegadores comuns continuam usando os controles normais. As consultas do navegador também são somente leitura.
 
-O arquivo `.nojekyll` está no repositório para o GitHub Pages não processar o conteúdo
-com Jekyll.
-
-### Rodar localmente
-
-```bash
-python3 -m http.server 8000
-```
-
-Abra `http://localhost:8000`. Não abra o `index.html` direto pelo `file://`: as fontes
-locais são bloqueadas por CORS nesse protocolo.
+Para verificar o PHP localmente, use PHP 8. As regras de `.htaccess` precisam de Apache/LiteSpeed e devem ser confirmadas na hospedagem. Um servidor estático simples permite revisar o visual, mas não valida negociação HTTP ou MCP.
 
 ---
 
@@ -96,7 +77,7 @@ Já configurados:
 
 O e-mail `contato@rodrigovictor.com.br` veio do mockup e **ainda não foi confirmado**.
 Se estiver errado, ele aparece em três lugares: no `index.html` (bloco de contato e
-JSON-LD) e no `privacidade.html`.
+JSON-LD) na home. A página de contato e a política de privacidade usam o WhatsApp confirmado.
 
 Para trocar o número de WhatsApp, altere a constante `WHATSAPP` no topo de
 `assets/js/main.js` e os links `wa.me` no `index.html`.

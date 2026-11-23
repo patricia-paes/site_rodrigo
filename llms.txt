@@ -1,0 +1,33 @@
+# Rodrigo Victor
+
+> Site oficial de Rodrigo Victor: personal trainer na Zona Sul do Rio de Janeiro e produção audiovisual com drone pela VISIONAIR.
+
+Idioma: português do Brasil. WhatsApp comercial: +55 21 99616-0489. Base: Rio de Janeiro, RJ, Brasil. O local de atendimento é combinado diretamente; o site não publica endereço de rua para visitas sem agendamento.
+
+Personal trainer: CREF 041487-G/RJ. Primeira avaliação presencial gratuita, mediante agendamento. VISIONAIR: filmagens para imóveis, obras, eventos e turismo. Valores, agenda e condições são confirmados diretamente. Os recursos para agentes são de consulta pública; não reservam serviços, não enviam mensagens e não acessam dados de clientes.
+
+## Visão geral
+
+- [Home em Markdown](https://rodrigovictor.com.br/index.md): apresentação, método, modalidades, região, avaliação e contatos.
+- [VISIONAIR em Markdown](https://rodrigovictor.com.br/visionair/index.md): serviços de drone, portfólio, processo, cadastro da aeronave e contato.
+- [Sobre Rodrigo Victor](https://rodrigovictor.com.br/sobre-rodrigo-victor/): formação e trajetória profissional.
+
+## Treinamento
+
+- [Método 4P](https://rodrigovictor.com.br/metodo-4p/): propósito, performance, proteção e permanência.
+- [Personal trainer em Botafogo](https://rodrigovictor.com.br/personal-trainer-botafogo/): atendimento presencial.
+- [Treino em condomínio](https://rodrigovictor.com.br/personal-trainer-condominio/): planejamento conforme o espaço disponível.
+- [Acompanhamento online](https://rodrigovictor.com.br/personal-trainer-online/): planejamento, revisão e feedback à distância.
+
+## Contato e políticas
+
+- [Contato](https://rodrigovictor.com.br/contato/): WhatsApp, Instagram e região de atendimento das duas atividades.
+- [Termos de uso](https://rodrigovictor.com.br/termos/): conteúdo, contato e condições de apresentação dos serviços.
+- [Política de Privacidade](https://rodrigovictor.com.br/privacidade.html): informações sobre o tratamento de dados.
+
+## Recursos técnicos
+
+- [Dados públicos estruturados](https://rodrigovictor.com.br/site-data.json): informações usadas pelas ferramentas de consulta.
+- [MCP Server Card](https://rodrigovictor.com.br/.well-known/mcp/server-card.json): identidade e endpoint do servidor MCP de leitura pública.
+- [Sitemap](https://rodrigovictor.com.br/sitemap.xml): páginas publicadas.
+- [Robots e Content Signals](https://rodrigovictor.com.br/robots.txt): search=yes, ai-input=yes, ai-train=no.

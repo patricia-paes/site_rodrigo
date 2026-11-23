@@ -11,6 +11,8 @@
 <meta name="geo.region" content="BR-RJ">
 <meta name="geo.placename" content="Rio de Janeiro">
 <link rel="canonical" href="https://rodrigovictor.com.br/">
+<link rel="alternate" type="text/markdown" href="/index.md">
+<link rel="describedby" type="text/plain" href="/llms.txt">
 
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
@@ -54,7 +56,7 @@
         <li><a href="#treinos">Treinos</a></li>
         <li><a href="#comecar">Como começar</a></li>
         <li><a href="#faq">FAQ</a></li>
-        <li><a href="#contato">Contato</a></li>
+        <li><a href="/contato/">Contato</a></li>
       </ul>
     </nav>
 
@@ -450,7 +452,7 @@
         <li><a href="/personal-trainer-online/">Online</a></li>
         <li><a href="#comecar">Como começar</a></li>
         <li><a href="#faq">FAQ</a></li>
-        <li><a href="#contato">Contato</a></li>
+        <li><a href="/contato/">Contato</a></li>
         <li><a href="/visionair/">VISIONAIR · Filmagens com drone</a></li>
       </ul>
     </nav>
@@ -470,7 +472,7 @@
 
   <div class="wrap rodape__base">
     <p>© <span id="ano">2026</span> Rodrigo Victor Personal Trainer. Todos os direitos reservados.</p>
-    <p><a href="privacidade.html">Política de Privacidade</a></p>
+    <p><a href="/privacidade.html">Política de Privacidade</a> · <a href="/termos/">Termos de uso</a></p>
   </div>
 </footer>
 
@@ -490,7 +492,9 @@
       "alternateName": "Rodrigo Victor Personal Trainer",
       "url": "https://rodrigovictor.com.br/",
       "inLanguage": "pt-BR",
-      "publisher": { "@id": "https://rodrigovictor.com.br/#rodrigo" }
+      "publisher": {
+        "@id": "https://rodrigovictor.com.br/#business"
+      }
     },
     {
       "@type": "WebPage",
@@ -498,9 +502,15 @@
       "url": "https://rodrigovictor.com.br/",
       "name": "Personal Trainer na Zona Sul do Rio | Rodrigo Victor",
       "description": "Personal trainer na Zona Sul do Rio de Janeiro, com treinamento individualizado, avaliação gratuita e acompanhamento presencial ou online.",
-      "isPartOf": { "@id": "https://rodrigovictor.com.br/#website" },
-      "about": { "@id": "https://rodrigovictor.com.br/#rodrigo" },
-      "breadcrumb": { "@id": "https://rodrigovictor.com.br/#breadcrumb" },
+      "isPartOf": {
+        "@id": "https://rodrigovictor.com.br/#website"
+      },
+      "about": {
+        "@id": "https://rodrigovictor.com.br/#rodrigo"
+      },
+      "breadcrumb": {
+        "@id": "https://rodrigovictor.com.br/#breadcrumb"
+      },
       "inLanguage": "pt-BR"
     },
     {
@@ -511,50 +521,140 @@
       "url": "https://rodrigovictor.com.br/",
       "image": "https://rodrigovictor.com.br/assets/img/og-image.jpg",
       "telephone": "+55-21-99616-0489",
-      "email": "contato@rodrigovictor.com.br",
       "identifier": "CREF 041487-G/RJ",
       "sameAs": [
         "https://www.instagram.com/coachrodrigovictor/",
         "https://www.linkedin.com/in/rodrigo-ferreira-62576147/"
       ],
       "areaServed": [
-        { "@type": "Place", "name": "Botafogo, Rio de Janeiro, RJ" },
-        { "@type": "Place", "name": "Flamengo, Rio de Janeiro, RJ" },
-        { "@type": "Place", "name": "Laranjeiras, Rio de Janeiro, RJ" },
-        { "@type": "Place", "name": "Humaitá, Rio de Janeiro, RJ" },
-        { "@type": "Place", "name": "Urca, Rio de Janeiro, RJ" },
-        { "@type": "Place", "name": "Catete, Rio de Janeiro, RJ" },
-        { "@type": "Place", "name": "Copacabana, Rio de Janeiro, RJ" },
-        { "@type": "Place", "name": "Leme, Rio de Janeiro, RJ" },
-        { "@type": "Place", "name": "Ipanema, Rio de Janeiro, RJ" },
-        { "@type": "Place", "name": "Leblon, Rio de Janeiro, RJ" },
-        { "@type": "Place", "name": "Gávea, Rio de Janeiro, RJ" },
-        { "@type": "Place", "name": "Jardim Botânico, Rio de Janeiro, RJ" },
-        { "@type": "Place", "name": "Lagoa, Rio de Janeiro, RJ" }
+        {
+          "@type": "Place",
+          "name": "Botafogo, Rio de Janeiro, RJ"
+        },
+        {
+          "@type": "Place",
+          "name": "Flamengo, Rio de Janeiro, RJ"
+        },
+        {
+          "@type": "Place",
+          "name": "Laranjeiras, Rio de Janeiro, RJ"
+        },
+        {
+          "@type": "Place",
+          "name": "Humaitá, Rio de Janeiro, RJ"
+        },
+        {
+          "@type": "Place",
+          "name": "Urca, Rio de Janeiro, RJ"
+        },
+        {
+          "@type": "Place",
+          "name": "Catete, Rio de Janeiro, RJ"
+        },
+        {
+          "@type": "Place",
+          "name": "Copacabana, Rio de Janeiro, RJ"
+        },
+        {
+          "@type": "Place",
+          "name": "Leme, Rio de Janeiro, RJ"
+        },
+        {
+          "@type": "Place",
+          "name": "Ipanema, Rio de Janeiro, RJ"
+        },
+        {
+          "@type": "Place",
+          "name": "Leblon, Rio de Janeiro, RJ"
+        },
+        {
+          "@type": "Place",
+          "name": "Gávea, Rio de Janeiro, RJ"
+        },
+        {
+          "@type": "Place",
+          "name": "Jardim Botânico, Rio de Janeiro, RJ"
+        },
+        {
+          "@type": "Place",
+          "name": "Lagoa, Rio de Janeiro, RJ"
+        }
       ],
-      "knowsAbout": ["Treinamento físico", "Cinesiologia", "Biomecânica", "CrossFit", "Treino adaptado"],
+      "knowsAbout": [
+        "Treinamento físico",
+        "Cinesiologia",
+        "Biomecânica",
+        "CrossFit",
+        "Treino adaptado"
+      ],
       "hasCredential": [
-        { "@type": "EducationalOccupationalCredential", "credentialCategory": "Registro profissional", "name": "CREF 041487-G/RJ" },
-        { "@type": "EducationalOccupationalCredential", "credentialCategory": "Especialização", "name": "Cinesiologia, Biomecânica e Treinamento Físico" },
-        { "@type": "EducationalOccupationalCredential", "credentialCategory": "Certificação", "name": "CrossFit Level 2" }
-      ]
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Registro profissional",
+          "name": "CREF 041487-G/RJ"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Especialização",
+          "name": "Cinesiologia, Biomecânica e Treinamento Físico"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Certificação",
+          "name": "CrossFit Level 2"
+        }
+      ],
+      "worksFor": {
+        "@id": "https://rodrigovictor.com.br/#business"
+      }
     },
     {
-      "@type": "Organization",
-      "@id": "https://rodrigovictor.com.br/#realcross",
-      "name": "Real Cross",
-      "founder": { "@id": "https://rodrigovictor.com.br/#rodrigo" },
-      "foundingDate": "2017",
-      "location": { "@type": "Place", "name": "Botafogo, Rio de Janeiro, RJ" }
+      "@type": "LocalBusiness",
+      "@id": "https://rodrigovictor.com.br/#business",
+      "name": "Rodrigo Victor — Personal Trainer",
+      "url": "https://rodrigovictor.com.br/",
+      "telephone": "+55-21-99616-0489",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Rio de Janeiro",
+        "addressRegion": "RJ",
+        "addressCountry": "BR"
+      },
+      "description": "Personal trainer na Zona Sul do Rio de Janeiro, com treinamento individualizado e acompanhamento presencial ou online.",
+      "founder": {
+        "@id": "https://rodrigovictor.com.br/#rodrigo"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Zona Sul, Rio de Janeiro, RJ"
+      },
+      "image": "https://rodrigovictor.com.br/assets/img/og-image.jpg",
+      "sameAs": [
+        "https://www.instagram.com/coachrodrigovictor/"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+55-21-99616-0489",
+        "contactType": "Atendimento e agendamento",
+        "availableLanguage": "pt-BR",
+        "url": "https://rodrigovictor.com.br/contato/"
+      }
     },
     {
       "@type": "Service",
       "@id": "https://rodrigovictor.com.br/#personal-training",
       "name": "Treinamento individualizado",
       "serviceType": "Personal trainer",
-      "provider": { "@id": "https://rodrigovictor.com.br/#rodrigo" },
-      "areaServed": { "@type": "Place", "name": "Zona Sul, Rio de Janeiro, RJ" },
-      "hasOfferCatalog": { "@id": "https://rodrigovictor.com.br/#servicos" }
+      "provider": {
+        "@id": "https://rodrigovictor.com.br/#rodrigo"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Zona Sul, Rio de Janeiro, RJ"
+      },
+      "hasOfferCatalog": {
+        "@id": "https://rodrigovictor.com.br/#servicos"
+      }
     },
     {
       "@type": "OfferCatalog",
@@ -567,8 +667,13 @@
             "@type": "Service",
             "name": "Treino na academia do aluno",
             "description": "Treinamento individualizado em academias da Zona Sul do Rio de Janeiro.",
-            "areaServed": { "@type": "Place", "name": "Zona Sul, Rio de Janeiro, RJ" },
-            "provider": { "@id": "https://rodrigovictor.com.br/#rodrigo" }
+            "areaServed": {
+              "@type": "Place",
+              "name": "Zona Sul, Rio de Janeiro, RJ"
+            },
+            "provider": {
+              "@id": "https://rodrigovictor.com.br/#rodrigo"
+            }
           }
         },
         {
@@ -577,8 +682,13 @@
             "@type": "Service",
             "name": "Treino em condomínio",
             "description": "Treino personalizado na academia do condomínio do aluno.",
-            "areaServed": { "@type": "Place", "name": "Rio de Janeiro, RJ" },
-            "provider": { "@id": "https://rodrigovictor.com.br/#rodrigo" }
+            "areaServed": {
+              "@type": "Place",
+              "name": "Rio de Janeiro, RJ"
+            },
+            "provider": {
+              "@id": "https://rodrigovictor.com.br/#rodrigo"
+            }
           }
         },
         {
@@ -587,8 +697,13 @@
             "@type": "Service",
             "name": "Treino em residência",
             "description": "Treinamento com conforto e privacidade na residência do aluno.",
-            "areaServed": { "@type": "Place", "name": "Rio de Janeiro, RJ" },
-            "provider": { "@id": "https://rodrigovictor.com.br/#rodrigo" }
+            "areaServed": {
+              "@type": "Place",
+              "name": "Rio de Janeiro, RJ"
+            },
+            "provider": {
+              "@id": "https://rodrigovictor.com.br/#rodrigo"
+            }
           }
         },
         {
@@ -597,8 +712,13 @@
             "@type": "Service",
             "name": "Treino ao ar livre",
             "description": "Treino personalizado em espaços externos como Aterro, Lagoa, praia ou praça.",
-            "areaServed": { "@type": "Place", "name": "Rio de Janeiro, RJ" },
-            "provider": { "@id": "https://rodrigovictor.com.br/#rodrigo" }
+            "areaServed": {
+              "@type": "Place",
+              "name": "Rio de Janeiro, RJ"
+            },
+            "provider": {
+              "@id": "https://rodrigovictor.com.br/#rodrigo"
+            }
           }
         },
         {
@@ -607,7 +727,9 @@
             "@type": "Service",
             "name": "Treino online",
             "description": "Programa e acompanhamento à distância para quem viaja ou treina fora do Rio.",
-            "provider": { "@id": "https://rodrigovictor.com.br/#rodrigo" }
+            "provider": {
+              "@id": "https://rodrigovictor.com.br/#rodrigo"
+            }
           }
         }
       ]
@@ -629,5 +751,6 @@
 </script>
 
 <script src="assets/js/main.js" defer></script>
+
 </body>
 </html>

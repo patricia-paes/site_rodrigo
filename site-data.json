@@ -1,0 +1,112 @@
+{
+  "updated": "2026-11-23",
+  "businesses": {
+    "personal_trainer": {
+      "name": "Rodrigo Victor — Personal Trainer",
+      "url": "https://rodrigovictor.com.br/",
+      "description": "Personal trainer na Zona Sul do Rio de Janeiro, com treinamento individualizado e acompanhamento presencial ou online.",
+      "telephone": "+55 21 99616-0489",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Rio de Janeiro",
+        "addressRegion": "RJ",
+        "addressCountry": "BR"
+      },
+      "locationNote": "Rio de Janeiro, RJ, Brasil. O site não divulga endereço de estabelecimento para atendimento sem agendamento. O local do treino é combinado diretamente.",
+      "professionalRegistration": "CREF 041487-G/RJ",
+      "areaServed": [
+        "Botafogo",
+        "Flamengo",
+        "Laranjeiras",
+        "Humaitá",
+        "Urca",
+        "Catete",
+        "Copacabana",
+        "Leme",
+        "Ipanema",
+        "Leblon",
+        "Jardim Botânico",
+        "Gávea",
+        "Lagoa"
+      ],
+      "contact": {
+        "telephone": "+55 21 99616-0489",
+        "whatsapp": "https://wa.me/5521996160489",
+        "page": "https://rodrigovictor.com.br/contato/",
+        "instagram": "https://www.instagram.com/coachrodrigovictor/"
+      },
+      "services": [
+        {
+          "name": "Treino na academia do aluno",
+          "description": "Treinamento individualizado em academia da Zona Sul do Rio de Janeiro.",
+          "url": "https://rodrigovictor.com.br/#treinos"
+        },
+        {
+          "name": "Treino em condomínio",
+          "description": "Planejamento adaptado à academia e aos recursos do condomínio.",
+          "url": "https://rodrigovictor.com.br/personal-trainer-condominio/"
+        },
+        {
+          "name": "Treino em residência",
+          "description": "Treinamento adaptado ao espaço, aos recursos e à rotina do aluno.",
+          "url": "https://rodrigovictor.com.br/#treinos"
+        },
+        {
+          "name": "Treino ao ar livre",
+          "description": "Treinamento em espaços externos, conforme avaliação e planejamento.",
+          "url": "https://rodrigovictor.com.br/#treinos"
+        },
+        {
+          "name": "Acompanhamento online",
+          "description": "Planejamento individualizado, revisão do programa, análise de vídeos e feedback.",
+          "url": "https://rodrigovictor.com.br/personal-trainer-online/"
+        }
+      ],
+      "initialAssessment": "Primeira avaliação presencial gratuita, com duração aproximada de 40 minutos a 1 hora, mediante agendamento.",
+      "booking": "Entre em contato pelo WhatsApp para confirmar valores, disponibilidade e condições. O site não realiza reservas nem envia mensagens automaticamente."
+    },
+    "visionair": {
+      "name": "VISIONAIR — Rodrigo Victor",
+      "url": "https://rodrigovictor.com.br/visionair/",
+      "description": "Produção audiovisual com drone para imóveis, arquitetura e construção, eventos, turismo e destinos.",
+      "telephone": "+55 21 99616-0489",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Rio de Janeiro",
+        "addressRegion": "RJ",
+        "addressCountry": "BR"
+      },
+      "locationNote": "Base no Rio de Janeiro, RJ. Local, deslocamento e viabilidade da produção são confirmados no orçamento.",
+      "contact": {
+        "telephone": "+55 21 99616-0489",
+        "whatsapp": "https://wa.me/5521996160489",
+        "page": "https://rodrigovictor.com.br/contato/",
+        "instagram": "https://www.instagram.com/rv.visionair/"
+      },
+      "services": [
+        {
+          "name": "Imobiliário",
+          "url": "https://rodrigovictor.com.br/visionair/#servicos"
+        },
+        {
+          "name": "Arquitetura e construção",
+          "url": "https://rodrigovictor.com.br/visionair/#servicos"
+        },
+        {
+          "name": "Eventos",
+          "url": "https://rodrigovictor.com.br/visionair/#servicos"
+        },
+        {
+          "name": "Turismo e destinos",
+          "url": "https://rodrigovictor.com.br/visionair/#servicos"
+        },
+        {
+          "name": "Produção audiovisual",
+          "url": "https://rodrigovictor.com.br/visionair/#servicos"
+        }
+      ],
+      "aircraftRegistration": "Cadastro da aeronave ANAC/SISANT PP-996160489. Cada produção considera as condições do local e as autorizações aplicáveis.",
+      "booking": "Entre em contato pelo WhatsApp para confirmar valores, disponibilidade e condições. O site não realiza reservas nem envia mensagens automaticamente."
+    }
+  }
+}
