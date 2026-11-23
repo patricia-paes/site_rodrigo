@@ -186,8 +186,9 @@ seção clara, em 4,76:1.
 
 A página de drone integra este mesmo site em `https://rodrigovictor.com.br/visionair/`.
 Os arquivos de `visionair/` são estáticos e não precisam de build. Os estilos e scripts
-são independentes dos arquivos de Personal Trainer; não há links cruzados entre as
-duas atividades. A página inicial e as páginas existentes permanecem preservadas.
+são independentes dos arquivos de Personal Trainer. A home inclui um acesso no
+rodapé para `/visionair/`, identificado como “VISIONAIR · Filmagens com drone”.
+A página de drone está incluída no sitemap e mantém conteúdo e navegação próprios.
 
 Contatos da VISIONAIR:
 - WhatsApp: +55 21 99616-0489
