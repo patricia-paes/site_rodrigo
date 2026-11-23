@@ -1,0 +1,43 @@
+# VISIONAIR — Rodrigo Victor
+
+> Produção audiovisual com drone para imóveis, arquitetura e construção, eventos, turismo e destinos.
+
+Idioma: português do Brasil. Telefone e WhatsApp: +55 21 99616-0489. Localidade: Rio de Janeiro, RJ, Brasil.
+
+## Páginas
+
+- [Apresentação em Markdown](https://rodrigovictor.com.br/visionair/index.md)
+
+- [Contato](https://rodrigovictor.com.br/visionair/contato/)
+
+- [Privacidade](https://rodrigovictor.com.br/visionair/privacidade.html)
+
+- [Termos de uso](https://rodrigovictor.com.br/visionair/termos/)
+
+## Serviços
+
+- [Imobiliário](https://rodrigovictor.com.br/visionair/filmagem-drone-imoveis/)
+
+- [Arquitetura e construção](https://rodrigovictor.com.br/visionair/filmagem-aerea-arquitetura-obras/)
+
+- [Eventos](https://rodrigovictor.com.br/visionair/filmagem-eventos-drone/)
+
+- [Turismo e destinos](https://rodrigovictor.com.br/visionair/filmagem-drone-turismo-destinos/)
+
+- [Produção audiovisual](https://rodrigovictor.com.br/visionair/producao-audiovisual-rio-de-janeiro/)
+
+Atendimento exclusivamente na cidade do Rio de Janeiro.
+
+- [Portfólio](https://rodrigovictor.com.br/visionair/#portfolio)
+
+- [Créditos das imagens](https://rodrigovictor.com.br/visionair/creditos.html)
+
+## Recursos para consulta
+
+- [Dados públicos](https://rodrigovictor.com.br/visionair/site-data.json)
+
+- [MCP Server Card](https://rodrigovictor.com.br/visionair/.well-known/mcp/server-card.json)
+
+- [Sitemap desta área](https://rodrigovictor.com.br/visionair/sitemap.xml)
+
+Os recursos são de leitura pública. Não fazem reservas, não enviam mensagens e não acessam informações de clientes.

@@ -1,9 +1,9 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/v1/server-card.schema.json",
   "name": "br.com.rodrigovictor/site",
-  "title": "Rodrigo Victor — informações públicas",
-  "version": "1.0.0",
-  "description": "Consulta pública de serviços, contatos e páginas de Rodrigo Victor e VISIONAIR.",
+  "title": "Rodrigo Victor — contato",
+  "version": "1.1.0",
+  "description": "Consulta pública das informações e dos contatos de Rodrigo Victor — contato.",
   "websiteUrl": "https://rodrigovictor.com.br/",
   "repository": {
     "url": "https://github.com/patricia-paes/site_rodrigo",

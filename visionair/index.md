@@ -31,6 +31,6 @@ Cadastro da aeronave ANAC/SISANT: PP-996160489. Uso não recreativo na atividade
 - WhatsApp: +55 21 99616-0489 — https://wa.me/5521996160489
 - Instagram: https://www.instagram.com/rv.visionair/
 - Área de atendimento: somente a cidade do Rio de Janeiro, RJ, Brasil. A viabilidade de cada local é avaliada no orçamento.
-- [Contato](https://rodrigovictor.com.br/contato/) · [Termos](https://rodrigovictor.com.br/termos/) · [Privacidade](https://rodrigovictor.com.br/privacidade.html)
+- [Contato](https://rodrigovictor.com.br/visionair/contato/) · [Termos](https://rodrigovictor.com.br/visionair/termos/) · [Privacidade](https://rodrigovictor.com.br/visionair/privacidade.html)
 
 O formulário prepara uma mensagem no WhatsApp para revisão e envio pelo visitante. Não confirma automaticamente reserva ou contratação.

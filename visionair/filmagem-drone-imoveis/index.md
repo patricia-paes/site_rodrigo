@@ -50,7 +50,7 @@ Envie: Endereço, tipo de imóvel, áreas que precisam aparecer, canais de divul
 - Área de atendimento: exclusivamente a cidade do Rio de Janeiro, RJ.
 - [Portfólio](https://rodrigovictor.com.br/visionair/#portfolio)
 - [Instagram](https://www.instagram.com/rv.visionair/)
-- [Termos](https://rodrigovictor.com.br/termos/) · [Privacidade](https://rodrigovictor.com.br/privacidade.html)
+- [Termos](https://rodrigovictor.com.br/visionair/termos/) · [Privacidade](https://rodrigovictor.com.br/visionair/privacidade.html)
 
 Aeronave cadastrada na ANAC/SISANT: PP-996160489. Cada operação exige análise das condições e autorizações aplicáveis.
 

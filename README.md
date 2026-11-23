@@ -1,31 +1,38 @@
-# Rodrigo Victor — Personal Trainer
+# Rodrigo Victor — áreas independentes
 
-Site institucional de Rodrigo Victor, personal trainer na Zona Sul do Rio de Janeiro.
-CREF 041487-G/RJ.
+- `/`: página neutra, com nome e contato geral.
+- `/personal/`: personal trainer na Zona Sul do Rio de Janeiro, CREF 041487-G/RJ.
+- `/visionair/`: filmagem e fotografia aérea, somente na cidade do Rio de Janeiro.
 
-Páginas em HTML, CSS e JavaScript, com dois pontos PHP 8 para negociação de conteúdo e consultas MCP. A produção usa Hostinger/LiteSpeed.
+Não incluir links cruzados, menus de escolha ou referências comerciais de uma área
+na outra. Cada área possui contato, termos, privacidade, Markdown, `llms.txt`,
+`site-data.json`, Server Card e MCP próprios. Imagens e fontes podem compartilhar
+arquivos estáticos; isso não altera a navegação. O sitemap raiz é apenas o índice
+técnico dos três sitemaps, para descoberta das URLs pelos buscadores.
+
+Páginas em HTML, CSS e JavaScript, com pontos PHP 8 para negociação de conteúdo e consultas MCP em cada área. A produção usa Hostinger/LiteSpeed.
 
 ## Publicação
 
-O repositório `patricia-paes/site_rodrigo`, branch `main`, é a fonte da implantação existente na Hostinger. Preserve todos os diretórios, inclusive `visionair/` e `.well-known/`, e o arquivo `.htaccess`.
+O repositório `patricia-paes/site_rodrigo`, branch `main`, é a fonte da implantação existente na Hostinger. Preserve todos os diretórios, inclusive `personal/`, `visionair/`, `internal/` e `.well-known/`, e o arquivo `.htaccess`.
 
 Não mudar este domínio para GitHub Pages: Pages não executa o PHP necessário para a home em Markdown, os cabeçalhos HTTP e o endpoint MCP.
 
-- `index.php` serve o `index.html` aprovado ou `index.md`, conforme `Accept` e seus pesos `q`.
+- Os `index.php` da raiz, de `personal/` e de `visionair/` servem o HTML ou Markdown da própria área, conforme `Accept` e seus pesos `q`. A implementação comum fica em `internal/serve-page.php`.
 - A resposta da home anuncia `llms.txt`, o Markdown alternativo e o MCP Server Card pelo cabeçalho `Link`; `Vary: Accept` separa as representações.
 - `.htaccess` define `DirectoryIndex index.php index.html`, MIME de Markdown e a rota adicional `/mcp/server-card`.
-- `mcp/index.php` é um endpoint público, sem estado e somente leitura. Não consulta agenda, clientes, preços privados nem sistemas externos.
+- Cada `mcp/index.php` é um endpoint público, sem estado e somente leitura, com arquivos limitados à sua área. A implementação comum fica em `internal/mcp-server.php`, bloqueada para acesso HTTP direto. Não consulta agenda, clientes, preços privados nem sistemas externos.
 - `site-data.json` alimenta as consultas. Atualize-o junto com as páginas e as versões Markdown quando contatos ou serviços mudarem.
 - `robots.txt` permite busca e uso como contexto (`search=yes, ai-input=yes`) e declara oposição a treinamento (`ai-train=no`). Trata-se de uma preferência de uso, não um bloqueio de segurança.
 - O endereço estruturado contém apenas a localidade confirmada (Rio de Janeiro/RJ/BR). Não há endereço de rua publicado ou inventado.
 
 ### Verificação
 
-O MCP responde a `initialize`, `ping`, `tools/list`, `tools/call`, `resources/list` e `resources/read`. Aceita os protocolos 2025-11-25, 2025-06-18 e 2025-03-26. Requisições POST usam JSON-RPC; GET retorna 405 porque não há stream SSE. As únicas consultas são `get_business_information` e `list_services`, com `business` igual a `personal_trainer` ou `visionair`.
+O MCP responde a `initialize`, `ping`, `tools/list`, `tools/call`, `resources/list` e `resources/read`. Aceita os protocolos 2025-11-25, 2025-06-18 e 2025-03-26. Requisições POST usam JSON-RPC; GET retorna 405 porque não há stream SSE. As únicas consultas são `get_business_information` e `list_services`, com `business` limitado ao identificador da área: `rodrigo_victor` na raiz, `personal_trainer` em `/personal/mcp/` e `visionair` em `/visionair/mcp/`. Uma área rejeita consultas às outras.
 
-O Server Card está em `/.well-known/mcp/server-card.json`, mantendo o caminho solicitado pelo auditor. O formato segue os campos atuais da extensão de Server Cards, sucessora da SEP-1649. O campo adicional `capabilities` reflete a resposta real de inicialização.
+O Server Card de cada área fica no respectivo `.well-known/mcp/server-card.json`, mantendo o caminho solicitado pelo auditor. O formato segue os campos atuais da extensão de Server Cards, sucessora da SEP-1649. O campo adicional `capabilities` reflete a resposta real de inicialização.
 
-A integração WebMCP está preparada, mas ainda não ativada nas páginas: o navegador de validação não oferece essa API, e a ativação experimental está bloqueada neste ambiente. Os testes de contrato passaram; falta chamar as ferramentas em um navegador com suporte nativo antes de incluir `<script src="/assets/js/agent-tools.js" defer></script>` nas páginas. O arquivo detecta `document.modelContext` e a implementação antiga em `navigator.modelContext`. O navegador precisa oferecer a API; navegadores comuns continuam usando os controles normais. As consultas do navegador também são somente leitura.
+A integração WebMCP está preparada, mas ainda não ativada nas páginas: o navegador de validação não oferece essa API, e a ativação experimental está bloqueada neste ambiente. O código usa o atributo `data-agent-base` de cada HTML para limitar os dados à sua área. Falta chamar as ferramentas em um navegador com suporte nativo antes de incluir `<script src="/assets/js/agent-tools.js" defer></script>` nas páginas. O arquivo detecta `document.modelContext` e a implementação antiga em `navigator.modelContext`. O navegador precisa oferecer a API; navegadores comuns continuam usando os controles normais. As consultas do navegador também são somente leitura.
 
 Para verificar o PHP localmente, use PHP 8. As regras de `.htaccess` precisam de Apache/LiteSpeed e devem ser confirmadas na hospedagem. Um servidor estático simples permite revisar o visual, mas não valida negociação HTTP ou MCP.
 
@@ -34,7 +41,10 @@ Para verificar o PHP localmente, use PHP 8. As regras de `.htaccess` precisam de
 ## Estrutura
 
 ```
-index.html            página principal
+index.html            página neutra
+personal/             personal, conteúdos e políticas
+visionair/            drone, serviços e políticas
+internal/             implementações PHP comuns, sem acesso HTTP direto
 privacidade.html      política de privacidade (LGPD)
 assets/
   css/style.css       estilos, com os tokens de cor e tipografia no topo
@@ -50,7 +60,7 @@ CNAME, robots.txt, sitemap.xml, site.webmanifest, .nojekyll
 
 ### Depoimentos
 
-A seção `#depoimentos` no `index.html` está com três blocos vazios marcados com `TODO`.
+A seção `#depoimentos` no `personal/index.html` está com três blocos vazios marcados com `TODO`.
 Os textos do mockup original não foram aproveitados: eram fictícios e um deles comparava
 resultados de forma que o código de ética do CONFEF restringe.
 
@@ -76,11 +86,11 @@ Já configurados:
 - CREF: `041487-G/RJ`
 
 O e-mail `contato@rodrigovictor.com.br` veio do mockup e **ainda não foi confirmado**.
-Se estiver errado, ele aparece em três lugares: no `index.html` (bloco de contato e
+Se estiver errado, ele aparece em três lugares: no `personal/index.html` (bloco de contato e
 JSON-LD) na home. A página de contato e a política de privacidade usam o WhatsApp confirmado.
 
 Para trocar o número de WhatsApp, altere a constante `WHATSAPP` no topo de
-`assets/js/main.js` e os links `wa.me` no `index.html`.
+`assets/js/main.js` e os links `wa.me` no `personal/index.html`.
 
 ### Blog
 
@@ -167,8 +177,7 @@ seção clara, em 4,76:1.
 
 A página de drone integra este mesmo site em `https://rodrigovictor.com.br/visionair/`.
 Os arquivos de `visionair/` são estáticos e não precisam de build. Os estilos e scripts
-são independentes dos arquivos de Personal Trainer. A home inclui um acesso no
-rodapé para `/visionair/`, identificado como “VISIONAIR · Filmagens com drone”.
+são independentes dos arquivos de Personal Trainer. A VISIONAIR não é vinculada na navegação da página neutra nem da área de personal.
 A página de drone está incluída no sitemap e mantém conteúdo e navegação próprios.
 
 Contatos da VISIONAIR:
@@ -213,3 +222,17 @@ A VISIONAIR atende exclusivamente na cidade do Rio de Janeiro, conforme confirma
 da proprietária em 23/11/2026. Não publicar clientes, localizações,
 objetivos ou resultados de projetos sem informações e autorização para divulgação.
 As imagens de referência mantêm seus créditos e não representam serviços realizados.
+
+
+## Migração de personal em 23/11/2026
+
+O conteúdo anterior da raiz está em `/personal/`, com o mesmo visual e formulários.
+As URLs antigas de método, sobre e modalidades têm redirecionamentos 301 para
+as versões dentro de `/personal/`. A raiz não redireciona: agora é a página neutra.
+O caminho `/personal` e a variante com ponto final `/personal.` redirecionam para
+`/personal/`. Não interpretar o ponto de pontuação como extensão de arquivo.
+Os canonicals, links internos, dados estruturados, manifesto e sitemaps refletem
+os novos endereços. O conteúdo da raiz não descreve uma empresa; usa schema Person.
+
+Os links de contato e políticas da VISIONAIR permanecem em `/visionair/`.
+A página neutra não exibe perfis sociais de personal ou drone.

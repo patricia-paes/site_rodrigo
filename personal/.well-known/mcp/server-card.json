@@ -1,0 +1,32 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/v1/server-card.schema.json",
+  "name": "br.com.rodrigovictor/personal",
+  "title": "Rodrigo Victor — Personal Trainer",
+  "version": "1.1.0",
+  "description": "Consulta pública das informações e dos contatos de Rodrigo Victor — Personal Trainer.",
+  "websiteUrl": "https://rodrigovictor.com.br/personal/",
+  "repository": {
+    "url": "https://github.com/patricia-paes/site_rodrigo",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://rodrigovictor.com.br/personal/mcp/",
+      "supportedProtocolVersions": [
+        "2025-11-25",
+        "2025-06-18",
+        "2025-03-26"
+      ]
+    }
+  ],
+  "capabilities": {
+    "tools": {
+      "listChanged": false
+    },
+    "resources": {
+      "subscribe": false,
+      "listChanged": false
+    }
+  }
+}

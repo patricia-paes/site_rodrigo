@@ -1,0 +1,41 @@
+# Rodrigo Victor — Personal Trainer
+
+> Personal trainer na Zona Sul do Rio de Janeiro, com treinamento individualizado e acompanhamento presencial ou online.
+
+Idioma: português do Brasil. Telefone e WhatsApp: +55 21 99616-0489. Localidade: Rio de Janeiro, RJ, Brasil.
+
+## Páginas
+
+- [Sobre Rodrigo Victor](https://rodrigovictor.com.br/personal/sobre-rodrigo-victor/)
+
+- [Apresentação em Markdown](https://rodrigovictor.com.br/personal/index.md)
+
+- [Contato](https://rodrigovictor.com.br/personal/contato/)
+
+- [Privacidade](https://rodrigovictor.com.br/personal/privacidade.html)
+
+- [Termos de uso](https://rodrigovictor.com.br/personal/termos/)
+
+- [Método 4P](https://rodrigovictor.com.br/personal/metodo-4p/)
+
+## Serviços
+
+- [Treino na academia do aluno](https://rodrigovictor.com.br/personal/#treinos)
+
+- [Treino em condomínio](https://rodrigovictor.com.br/personal/personal-trainer-condominio/)
+
+- [Treino em residência](https://rodrigovictor.com.br/personal/#treinos)
+
+- [Treino ao ar livre](https://rodrigovictor.com.br/personal/#treinos)
+
+- [Acompanhamento online](https://rodrigovictor.com.br/personal/personal-trainer-online/)
+
+## Recursos para consulta
+
+- [Dados públicos](https://rodrigovictor.com.br/personal/site-data.json)
+
+- [MCP Server Card](https://rodrigovictor.com.br/personal/.well-known/mcp/server-card.json)
+
+- [Sitemap desta área](https://rodrigovictor.com.br/personal/sitemap.xml)
+
+Os recursos são de leitura pública. Não fazem reservas, não enviam mensagens e não acessam informações de clientes.

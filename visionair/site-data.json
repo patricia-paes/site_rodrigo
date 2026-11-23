@@ -1,0 +1,56 @@
+{
+  "updated": "2026-11-23",
+  "businesses": {
+    "visionair": {
+      "name": "VISIONAIR — Rodrigo Victor",
+      "url": "https://rodrigovictor.com.br/visionair/",
+      "description": "Produção audiovisual com drone para imóveis, arquitetura e construção, eventos, turismo e destinos.",
+      "telephone": "+55 21 99616-0489",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Rio de Janeiro",
+        "addressRegion": "RJ",
+        "addressCountry": "BR"
+      },
+      "locationNote": "Atendimento exclusivamente na cidade do Rio de Janeiro, RJ. A viabilidade de cada produção é avaliada pelo endereço, data e escopo.",
+      "contact": {
+        "telephone": "+55 21 99616-0489",
+        "whatsapp": "https://wa.me/5521996160489",
+        "page": "https://rodrigovictor.com.br/visionair/contato/",
+        "instagram": "https://www.instagram.com/rv.visionair/"
+      },
+      "services": [
+        {
+          "name": "Imobiliário",
+          "url": "https://rodrigovictor.com.br/visionair/filmagem-drone-imoveis/",
+          "description": "Apresente imóveis, terrenos e empreendimentos com filmagem e fotografia aérea no Rio de Janeiro. Conheça a produção da VISIONAIR e solicite orçamento."
+        },
+        {
+          "name": "Arquitetura e construção",
+          "url": "https://rodrigovictor.com.br/visionair/filmagem-aerea-arquitetura-obras/",
+          "description": "Registre arquitetura, canteiros e etapas de obras com imagens aéreas no Rio de Janeiro. Planejamento de captação e edição conforme o projeto. VISIONAIR."
+        },
+        {
+          "name": "Eventos",
+          "url": "https://rodrigovictor.com.br/visionair/filmagem-eventos-drone/",
+          "description": "Imagens aéreas para eventos sociais, corporativos e esportivos no Rio de Janeiro. Consulte a viabilidade da captação e peça uma proposta à VISIONAIR."
+        },
+        {
+          "name": "Turismo e destinos",
+          "url": "https://rodrigovictor.com.br/visionair/filmagem-drone-turismo-destinos/",
+          "description": "Apresente paisagens, hospedagens e experiências com imagens aéreas. Produção da VISIONAIR exclusivamente na cidade do Rio de Janeiro."
+        },
+        {
+          "name": "Produção audiovisual",
+          "url": "https://rodrigovictor.com.br/visionair/producao-audiovisual-rio-de-janeiro/",
+          "description": "Captação aérea e edição para marcas, campanhas e projetos no Rio de Janeiro. Planeje seu vídeo com a VISIONAIR, de Rodrigo Victor. Solicite orçamento."
+        }
+      ],
+      "aircraftRegistration": "Cadastro da aeronave ANAC/SISANT PP-996160489. Cada produção considera as condições do local e as autorizações aplicáveis.",
+      "booking": "Entre em contato pelo WhatsApp para confirmar valores, disponibilidade e condições. O site não realiza reservas nem envia mensagens automaticamente.",
+      "areaServed": [
+        "Rio de Janeiro (cidade)"
+      ]
+    }
+  }
+}

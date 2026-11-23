@@ -1,4 +1,4 @@
-(() => {
+(async () => {
   'use strict';
   // Current WebMCP lives on document; retain compatibility with early navigator implementations.
   const registry = [document.modelContext, navigator.modelContext]
@@ -8,30 +8,34 @@
     return;
   }
   const lifecycle = new AbortController();
+  const base = document.documentElement.dataset.agentBase || '';
   let dataPromise;
-  const data = () => dataPromise ??= fetch('/site-data.json', {cache: 'no-cache'})
+  const data = () => dataPromise ??= fetch(base + '/site-data.json', {cache: 'no-cache', signal: lifecycle.signal})
     .then(response => {
       if (!response.ok) throw new Error('As informações públicas estão temporariamente indisponíveis.');
       return response.json();
     }).catch(error => { dataPromise = undefined; throw error; });
+  let allowed;
+  try { allowed = Object.keys((await data()).businesses); }
+  catch (_) { document.documentElement.dataset.agentTools = 'data-error'; return; }
   const inputSchema = {
     type: 'object',
-    properties: {business: {type: 'string', enum: ['personal_trainer', 'visionair']}},
+    properties: {business: {type: 'string', enum: allowed}},
     required: ['business'],
     additionalProperties: false
   };
   function validate(input) {
     if (!input || typeof input !== 'object' || Array.isArray(input) ||
         Object.keys(input).some(key => key !== 'business') ||
-        !['personal_trainer', 'visionair'].includes(input.business)) {
-      throw new Error('Informe business como personal_trainer ou visionair.');
+        !allowed.includes(input.business)) {
+      throw new Error('Informe um identificador publicado nesta área.');
     }
     return input.business;
   }
   const tools = [
     {
       name: 'get_business_information',
-      description: 'Consulta os dados públicos de Rodrigo Victor: apresentação, contato, região de atendimento e páginas oficiais de personal trainer ou VISIONAIR. Não agenda nem envia mensagens.',
+      description: 'Consulta a apresentação e o contato publicados nesta área. Não agenda nem envia mensagens.',
       inputSchema,
       annotations: {readOnlyHint: true},
       async execute(input) {
@@ -42,7 +46,7 @@
     },
     {
       name: 'list_services',
-      description: 'Lista as modalidades de treinamento ou serviços de filmagem com drone publicados por Rodrigo Victor. Preços, horários e disponibilidade devem ser confirmados pelo WhatsApp.',
+      description: 'Lista os serviços publicados nesta área, quando houver. Preços e disponibilidade devem ser confirmados pelo contato oficial.',
       inputSchema,
       annotations: {readOnlyHint: true},
       async execute(input) {

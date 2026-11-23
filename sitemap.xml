@@ -1,18 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://rodrigovictor.com.br/</loc><lastmod>2026-11-23</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://rodrigovictor.com.br/personal-trainer-botafogo/</loc><lastmod>2026-09-22</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://rodrigovictor.com.br/personal-trainer-condominio/</loc><lastmod>2026-09-22</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
-  <url><loc>https://rodrigovictor.com.br/personal-trainer-online/</loc><lastmod>2026-09-22</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
-  <url><loc>https://rodrigovictor.com.br/metodo-4p/</loc><lastmod>2026-09-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://rodrigovictor.com.br/sobre-rodrigo-victor/</loc><lastmod>2026-09-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://rodrigovictor.com.br/privacidade.html</loc><lastmod>2026-09-22</lastmod><changefreq>yearly</changefreq><priority>0.2</priority></url>
-  <url><loc>https://rodrigovictor.com.br/visionair/</loc><lastmod>2026-11-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://rodrigovictor.com.br/contato/</loc><lastmod>2026-11-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://rodrigovictor.com.br/termos/</loc><lastmod>2026-11-23</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://rodrigovictor.com.br/visionair/filmagem-drone-imoveis/</loc><lastmod>2026-11-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://rodrigovictor.com.br/visionair/filmagem-aerea-arquitetura-obras/</loc><lastmod>2026-11-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://rodrigovictor.com.br/visionair/filmagem-eventos-drone/</loc><lastmod>2026-11-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://rodrigovictor.com.br/visionair/filmagem-drone-turismo-destinos/</loc><lastmod>2026-11-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://rodrigovictor.com.br/visionair/producao-audiovisual-rio-de-janeiro/</loc><lastmod>2026-11-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-</urlset>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap><loc>https://rodrigovictor.com.br/sitemap-neutro.xml</loc><lastmod>2026-11-23</lastmod></sitemap>
+  <sitemap><loc>https://rodrigovictor.com.br/personal/sitemap.xml</loc><lastmod>2026-11-23</lastmod></sitemap>
+  <sitemap><loc>https://rodrigovictor.com.br/visionair/sitemap.xml</loc><lastmod>2026-11-23</lastmod></sitemap>
+</sitemapindex>

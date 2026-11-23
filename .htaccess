@@ -1,16 +1,15 @@
-# Hostinger / LiteSpeed: keep the existing static design; negotiate only the home.
+# Three independent experiences; legacy personal URLs retain permanent redirects.
 DirectoryIndex index.php index.html
 <IfModule mod_rewrite.c>
   RewriteEngine On
+  RewriteRule ^personal\.?$ /personal/ [R=301,L]
+  RewriteRule ^(metodo-4p|sobre-rodrigo-victor|personal-trainer-botafogo|personal-trainer-condominio|personal-trainer-online)(?:/index\.(?:html|php))?/?$ /personal/$1/ [R=301,L]
   RewriteRule ^index\.html$ index.php [L]
+  RewriteRule ^(personal|visionair)/index\.html$ $1/index.php [L]
   RewriteRule ^mcp/server-card/?$ .well-known/mcp/server-card.json [L]
+  RewriteRule ^(personal|visionair)/mcp/server-card/?$ $1/.well-known/mcp/server-card.json [L]
 </IfModule>
 <IfModule mod_mime.c>
   AddType text/markdown .md
   AddCharset UTF-8 .md .txt .json
-</IfModule>
-<IfModule mod_headers.c>
-  <FilesMatch "^(index\.md|llms\.txt)$">
-    Header set Link "<https://rodrigovictor.com.br/llms.txt>; rel=describedby"
-  </FilesMatch>
 </IfModule>
