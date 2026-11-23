@@ -86,23 +86,28 @@
       "services": [
         {
           "name": "Imobiliário",
-          "url": "https://rodrigovictor.com.br/visionair/#servicos"
+          "url": "https://rodrigovictor.com.br/visionair/filmagem-drone-imoveis/",
+          "description": "Apresente imóveis, terrenos e empreendimentos com filmagem e fotografia aérea no Rio de Janeiro. Conheça a produção da VISIONAIR e solicite orçamento."
         },
         {
           "name": "Arquitetura e construção",
-          "url": "https://rodrigovictor.com.br/visionair/#servicos"
+          "url": "https://rodrigovictor.com.br/visionair/filmagem-aerea-arquitetura-obras/",
+          "description": "Registre arquitetura, canteiros e etapas de obras com imagens aéreas no Rio de Janeiro. Planejamento de captação e edição conforme o projeto. VISIONAIR."
         },
         {
           "name": "Eventos",
-          "url": "https://rodrigovictor.com.br/visionair/#servicos"
+          "url": "https://rodrigovictor.com.br/visionair/filmagem-eventos-drone/",
+          "description": "Imagens aéreas para eventos sociais, corporativos e esportivos no Rio de Janeiro. Consulte a viabilidade da captação e peça uma proposta à VISIONAIR."
         },
         {
           "name": "Turismo e destinos",
-          "url": "https://rodrigovictor.com.br/visionair/#servicos"
+          "url": "https://rodrigovictor.com.br/visionair/filmagem-drone-turismo-destinos/",
+          "description": "Apresente paisagens, hospedagens e experiências com imagens aéreas. Produção da VISIONAIR com base no Rio de Janeiro e deslocamentos sob consulta."
         },
         {
           "name": "Produção audiovisual",
-          "url": "https://rodrigovictor.com.br/visionair/#servicos"
+          "url": "https://rodrigovictor.com.br/visionair/producao-audiovisual-rio-de-janeiro/",
+          "description": "Captação aérea e edição para marcas, campanhas e projetos no Rio de Janeiro. Planeje seu vídeo com a VISIONAIR, de Rodrigo Victor. Solicite orçamento."
         }
       ],
       "aircraftRegistration": "Cadastro da aeronave ANAC/SISANT PP-996160489. Cada produção considera as condições do local e as autorizações aplicáveis.",

@@ -197,3 +197,19 @@ O layout segue o mockup aprovado: hero, sobre, cinco serviços, filme do portfó
 diferenciais, cinco etapas, operação responsável, seis perguntas e contato.
 No celular, os serviços usam navegação horizontal com indicadores acessíveis.
 O filme abre em um diálogo com controles de reprodução, sem autoplay.
+
+
+## Páginas de serviços VISIONAIR
+
+As cinco páginas específicas de serviços ficam dentro de `visionair/` e são
+acessíveis pelos cartões da página principal, pelo sitemap e pelo `llms.txt`.
+Cada uma tem título, descrição, canonical, conteúdo próprio, dados estruturados
+Service/LocalBusiness/BreadcrumbList e uma versão `index.md`.
+O conteúdo e o HTML das páginas são gerados por `python3 scripts/build-visionair-services.py`.
+Não há dependência de Python na hospedagem; os HTMLs gerados são versionados.
+O estilo compartilhado fica em `visionair/services.css`.
+
+Somente a cidade do Rio de Janeiro está declarada como área confirmada da VISIONAIR.
+Outros municípios dependem de confirmação. Não publicar clientes, localizações,
+objetivos ou resultados de projetos sem informações e autorização para divulgação.
+As imagens de referência mantêm seus créditos e não representam serviços realizados.

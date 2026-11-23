@@ -90,3 +90,9 @@
 .project-copy .project-format{font-size:14px!important;color:var(--gold)}
 .project-instagram{display:block;color:#bccbd3;margin-top:20px;font-size:15px;text-decoration:underline;text-underline-offset:4px}
 @media(max-width:650px){.project-feature{grid-template-columns:1fr;gap:26px;margin-top:24px}.project-feature .project-film{height:480px}.project-copy h3{font-size:30px}.project-copy>p:not(.eyebrow){font-size:16px}.project-copy .button{width:100%;font-size:13px}}
+
+/* Service discovery and production details. */
+.hero-content>.hero-service-label{color:var(--gold);font-size:14px;letter-spacing:.055em;text-transform:uppercase;line-height:1.4;margin:0 0 20px;max-width:48ch}
+.service-nav-hint{font-size:14px;margin-top:24px;line-height:1.5}.service:hover h3{color:var(--gold)}
+.production-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(24px,3.5vw,65px)}.production-grid h3{font-size:23px;margin-bottom:15px}.production-grid p{font-size:17px;line-height:1.55;max-width:55ch}
+@media(max-width:650px){.hero-content>.hero-service-label{font-size:11px;margin-bottom:14px;max-width:34ch}.production-grid{grid-template-columns:1fr;gap:25px}.production-grid h3{font-size:22px}.production-grid p{font-size:16px}.service-nav-hint{font-size:13px;margin-top:18px}}
