@@ -180,3 +180,34 @@ seção clara, em 4,76:1.
 - **Acessibilidade**: link de pular para o conteúdo, foco visível, navegação por teclado
   no menu, `prefers-reduced-motion` respeitado, textos alternativos descritivos.
 - **Movimento**: só a entrada do hero, uma vez no carregamento. Sem animações de scroll.
+
+
+## VISIONAIR — produção audiovisual com drone
+
+A página de drone integra este mesmo site em `https://rodrigovictor.com.br/visionair/`.
+Os arquivos de `visionair/` são estáticos e não precisam de build. Os estilos e scripts
+são independentes dos arquivos de Personal Trainer; não há links cruzados entre as
+duas atividades. A página inicial e as páginas existentes permanecem preservadas.
+
+Contatos da VISIONAIR:
+- WhatsApp: +55 21 99616-0489
+- Instagram: https://www.instagram.com/rv.visionair/
+
+O formulário abre o WhatsApp com uma mensagem para revisão e envio pelo visitante.
+Não armazena dados e não envia mensagens automaticamente.
+
+A logomarca usa o desenho original da VISIONAIR com fundo transparente. A seção de
+operação responsável apresenta o cadastro ANAC/SISANT PP-996160489, sem divulgar
+o modelo, a validade da certidão, CPF, número de série ou o documento integral.
+
+A fotografia de Rodrigo e o vídeo de 33 segundos foram fornecidos pela proprietária.
+O vídeo está em MP4/H.264, otimizado para a web, sem reprodução automática.
+As quatro publicações do Instagram foram reutilizadas com autorização da proprietária;
+cada miniatura leva ao respectivo post em @rv.visionair.
+As imagens de apresentação e serviços são ilustrativas, geradas por IA; a paisagem
+fotográfica é de Shai Pal / Unsplash, com crédito na página:
+https://unsplash.com/photos/sugarloaf-mountain-and-guanabara-bay-at-sunset-G3qe7t13s1I
+
+O layout segue o mockup aprovado: hero, sobre, cinco serviços, galeria com filtros,
+diferenciais, cinco etapas, operação responsável, seis perguntas e contato.
+No celular, serviços e galeria usam navegação horizontal com indicadores acessíveis.
