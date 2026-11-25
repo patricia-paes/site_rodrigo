@@ -4,6 +4,11 @@ DirectoryIndex index.php index.html
   RewriteEngine On
   RewriteRule ^personal\.?$ /personal/ [R=301,L]
   RewriteRule ^(metodo-4p|sobre-rodrigo-victor|personal-trainer-botafogo|personal-trainer-condominio|personal-trainer-online)(?:/index\.(?:html|php))?/?$ /personal/$1/ [R=301,L]
+  # Institutional aliases linked from the homepage; the Portuguese pages stay canonical.
+  RewriteRule ^about/?$ /sobre/ [R=301,L]
+  RewriteRule ^contact/?$ /contato/ [R=301,L]
+  RewriteRule ^privacy/?$ /privacidade.html [R=301,L]
+  RewriteRule ^terms/?$ /termos/ [R=301,L]
   RewriteRule ^index\.html$ index.php [L]
   RewriteRule ^(personal|visionair)/index\.html$ $1/index.php [L]
   RewriteRule ^mcp/server-card/?$ .well-known/mcp/server-card.json [L]
