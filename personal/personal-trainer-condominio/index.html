@@ -16,6 +16,21 @@
 <link rel="icon" href="/assets/img/favicon.ico" sizes="any"><link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
 <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/jost-latin-300-normal.woff2" crossorigin><link rel="preload" as="font" type="font/woff2" href="/assets/fonts/cormorant-garamond-latin-300-normal.woff2" crossorigin>
 <link rel="stylesheet" href="/assets/css/style.css">
+<!-- Google Analytics (GA4): visitas, cliques no WhatsApp e envios de formulário -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6ELEF9LYFP"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-6ELEF9LYFP', { allow_google_signals: false, allow_ad_personalization_signals: false });
+document.addEventListener('click', function (e) {
+var a = e.target.closest && e.target.closest('a[href*="wa.me"], a[href*="whatsapp.com"]');
+if (a) gtag('event', 'whatsapp_click', { link_url: a.href.split('?')[0] });
+});
+document.addEventListener('submit', function (e) {
+gtag('event', 'generate_lead', { form_id: e.target.id || '' });
+});
+</script>
 </head>
 <body>
 <a class="skip" href="#conteudo">Ir para o conteúdo</a>
